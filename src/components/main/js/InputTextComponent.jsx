@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import ShareCryptedText from './ShareCryptedText';
 
 const InputTextComponent = () => {
   const [inputText, setInputText] = useState('');
   const [encryptedText, setEncryptedText] = useState('');
+  const [showResult, setShowResult] = useState(false);
 
   const handleInputChange = (event) => {
     setInputText(event.target.value);
+    setShowResult(false);
   };
 
   const handleEncrypt = () => {
@@ -53,8 +56,10 @@ const InputTextComponent = () => {
       7: '♥',
       8: '♠',
       9: '♣',
-    };
     
+
+    };
+    setShowResult(true);
 
     const replaceWithSymbols = (text) => {
       const textArray = text.split('');
@@ -69,6 +74,9 @@ const InputTextComponent = () => {
 
     const encrypted = replaceWithSymbols(inputText);
     setEncryptedText(encrypted);
+
+    
+  
   };
 
   return (
@@ -86,15 +94,18 @@ const InputTextComponent = () => {
       <div>
         <button onClick={handleEncrypt}>Šifriraj</button>
       </div>
-      <div>
-        <textarea
-          rows="4"
-          cols="50"
-          placeholder="Šifrirani tekst će se prikazati ovdje..."
-          value={encryptedText}
-          readOnly
-        ></textarea>
-      </div>
+      {showResult && (
+        <div>
+          <textarea
+            rows="4"
+            cols="50"
+            placeholder="Šifrirani tekst će se prikazati ovdje..."
+            value={encryptedText}
+            readOnly
+          ></textarea>
+          <ShareCryptedText encryptedText={encryptedText} />
+        </div>
+      )}
     </div>
   );
 };
