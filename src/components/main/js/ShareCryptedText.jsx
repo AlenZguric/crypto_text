@@ -1,6 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 const ShareCryptedText = ({ encryptedText }) => {
+
+    const [showNotification, setShowNotification] = useState(false);
+
+    useEffect(() => {
+      if (showNotification) {
+        const timer = setTimeout(() => {
+          setShowNotification(false);
+        }, 2000); 
+  
+        return () => {
+          clearTimeout(timer);
+        };
+      }
+    }, [showNotification]);
   const handleShare = () => {
     if (navigator.share) {
       navigator
@@ -22,6 +36,8 @@ const ShareCryptedText = ({ encryptedText }) => {
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
+
+    setShowNotification(true);
   };
   
   return (
@@ -36,6 +52,7 @@ const ShareCryptedText = ({ encryptedText }) => {
           content_copy
         </i>
       </button>
+      {showNotification && <p>Tekst je uspešno kopiran!</p>}
     </div>
   );
 };
