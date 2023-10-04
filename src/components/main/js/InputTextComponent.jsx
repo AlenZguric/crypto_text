@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ShareCryptedText from './ShareCryptedText';
+import symbolMap from './symbolLib';
 
 const InputTextComponent = () => {
   const [inputText, setInputText] = useState('');
@@ -12,72 +13,20 @@ const InputTextComponent = () => {
   };
 
   const handleEncrypt = () => {
-    const symbolMap = {
-      a: 'Ⓞ',
-      b: 'Ⓟ',
-      c: 'Ⓠ',
-      č: 'Ⓢ',
-      ć: 'Ⓣ',
-      d: 'Ⓤ',
-      đ: 'Ⓥ',
-      e: 'Ⓦ',
-      f: 'Ⓧ',
-      g: 'Ⓨ',
-      h: 'Ⓩ',
-      i: 'ⓐ',
-      j: 'ⓑ',
-      k: 'ⓒ',
-      l: 'ⓓ',
-      lj: 'ⓔ',
-      m: 'ⓕ',
-      n: 'ⓖ',
-      nj: 'ⓗ',
-      o: 'ⓘ',
-      p: 'ⓙ',
-      r: 'ⓚ',
-      s: 'ⓛ',
-      š: 'ⓜ',
-      t: 'ⓝ',
-      u: 'ⓞ',
-      v: 'ⓟ',
-      w: '&',
-      x: '%',
-      y: '$',
-      z: 'ⓠ',
-      ž: 'ⓡ',
-      " ": '§',
-      0: '•',
-      1: '○',
-      2: '▪',
-      3: '▲',
-      4: '★',
-      5: '♦',
-      6: '♣',
-      7: '♥',
-      8: '♠',
-      9: '♣',
-    
+    // Ovdje koristite symbolMap za šifriranje teksta
+    const encrypted = inputText
+      .toLowerCase() // Prebacuje tekst u mala slova radi lakšeg mapiranja
+      .split('') // Razdvaja tekst na karaktere
+      .map((char) => (symbolMap[char] ? symbolMap[char] : char)) // Mapira simbole
+      .join(''); // Spaja karaktere nazad
 
-    };
-    setShowResult(true);
-
-    const replaceWithSymbols = (text) => {
-      const textArray = text.split('');
-      const encryptedArray = textArray.map((char) => {
-        if (char.toLowerCase() in symbolMap) {
-          return symbolMap[char.toLowerCase()];
-        }
-        return char;
-      });
-      return encryptedArray.join('');
-    };
-
-    const encrypted = replaceWithSymbols(inputText);
     setEncryptedText(encrypted);
 
-    
-  
+    setShowResult(true);
+
   };
+
+ 
 
   return (
     <div>
@@ -108,6 +57,6 @@ const InputTextComponent = () => {
       )}
     </div>
   );
-};
+      };
 
 export default InputTextComponent;
