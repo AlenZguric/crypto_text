@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App"> 
       <NavBar/> 
-      <HomePage/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/share" element={<Share />} />
