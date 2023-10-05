@@ -1,13 +1,16 @@
 // InputCryptoTextComponent.jsx
 import React, { useState } from 'react';
 import symbolMap from './symbolLib';
+import ShareCryptedText from './ShareCryptedText';
 
 const InputCryptoTextComponent = () => {
   const [encryptedText, setEncryptedText] = useState('');
   const [decryptedText, setDecryptedText] = useState('');
+  const [showResult, setShowResult] = useState(false);
 
   const handleInputChange = (event) => {
     setEncryptedText(event.target.value);
+    setShowResult(false);
   };
 
   const handleDecrypt = () => {
@@ -24,11 +27,13 @@ const InputCryptoTextComponent = () => {
       .join(''); // Spajanje karaktera nazad
 
     setDecryptedText(decrypted);
+
+    setShowResult(true);
   };
 
   return (
     <div>
-      <h1>Decrypt CryptoText</h1>
+      <h2>Dešifriraj text...</h2>
       <div>
         <textarea
           rows="4"
@@ -41,15 +46,12 @@ const InputCryptoTextComponent = () => {
       <div>
         <button onClick={handleDecrypt}>Dešifriraj</button>
       </div>
-      {decryptedText && (
+      {showResult && (
         <div>
-          <textarea
-            rows="4"
-            cols="50"
-            placeholder="Originalni tekst će se prikazati ovdje..."
-            value={decryptedText}
-            readOnly
-          ></textarea>
+          <span className='resultDecrypto' aria-readonly>
+          {decryptedText}
+          <ShareCryptedText decryptedText={decryptedText} />
+          </span>
         </div>
       )}
     </div>

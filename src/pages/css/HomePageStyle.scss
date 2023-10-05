@@ -1,0 +1,51 @@
+// Definisanje četiri boje
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$background-color: #ecf0f1;
+$button-color: #2ecc71;
+
+// Stilizacija celog homepage-a
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .toggle-switch {
+    background-color: $background-color;
+    border: 2px solid $primary-color;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+
+    &.active {
+      background-color: $primary-color;
+      color: white;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + .toggle-switch {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

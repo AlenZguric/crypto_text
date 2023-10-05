@@ -30,7 +30,7 @@ const InputTextComponent = () => {
 
   return (
     <div>
-      <h1>CryptoText</h1>
+      <h2>Šifriraj text...</h2>
       <div>
         <textarea
           rows="4"
@@ -45,14 +45,10 @@ const InputTextComponent = () => {
       </div>
       {showResult && (
         <div>
-          <textarea
-            rows="4"
-            cols="50"
-            placeholder="Šifrirani tekst će se prikazati ovdje..."
-            value={encryptedText}
-            readOnly
-          ></textarea>
-          <ShareCryptedText encryptedText={encryptedText} />
+         <span className='resultCrypto' aria-readonly>
+         {encryptedText}
+         <ShareCryptedText encryptedText={encryptedText} />
+         </span>
         </div>
       )}
     </div>

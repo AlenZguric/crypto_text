@@ -1,0 +1,38 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+}
+.home-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.home-page .toggle-switch {
+  background-color: #ecf0f1;
+  border: 2px solid #3498db;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+.home-page .toggle-switch.active {
+  background-color: #3498db;
+  color: white;
+}
+.home-page .toggle-switch:hover {
+  background-color: #e74c3c;
+}
+.home-page input[type=checkbox] {
+  display: none;
+}
+.home-page input[type=checkbox]:checked + .toggle-switch {
+  background-color: #e74c3c;
+  color: white;
+}/*# sourceMappingURL=HomePageStyle.css.map */
