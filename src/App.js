@@ -12,7 +12,9 @@ import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <div className="App"> 
+      <header>
       <NavBar/> 
+      </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/share" element={<Share />} />
