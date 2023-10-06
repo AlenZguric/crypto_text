@@ -21,15 +21,11 @@ const InputTextComponent = () => {
       .join(''); // Spaja karaktere nazad
 
     setEncryptedText(encrypted);
-
     setShowResult(true);
-
   };
 
- 
-
   return (
-    <div>
+    <div className="input-text-component">
       <h2>Šifriraj text...</h2>
       <div>
         <textarea
@@ -38,21 +34,22 @@ const InputTextComponent = () => {
           placeholder="Unesite tekst ovdje..."
           value={inputText}
           onChange={handleInputChange}
+          className="input-textarea"
         ></textarea>
       </div>
       <div>
-        <button onClick={handleEncrypt}>Šifriraj</button>
+        <button onClick={handleEncrypt} className="encrypt-button">
+          Šifriraj
+        </button>
       </div>
       {showResult && (
-        <div>
-         <span className='resultCrypto' aria-readonly>
-         {encryptedText}
-         <ShareCryptedText encryptedText={encryptedText} />
-         </span>
+        <div className="result-container">
+          <span className="result-crypto">{encryptedText}</span>
+          <ShareCryptedText encryptedText={encryptedText} />
         </div>
       )}
     </div>
   );
-      };
+};
 
 export default InputTextComponent;

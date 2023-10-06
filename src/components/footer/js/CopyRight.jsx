@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import "../css/CopyRightStyle.css";
+
 function CopyrightYear() {
   const [currentYear, setCurrentYear] = useState(0); // Početna vrijednost 0, bit će zamijenjena prilikom montiranja
   const [copyrightText, setCopyrightText] = useState('');

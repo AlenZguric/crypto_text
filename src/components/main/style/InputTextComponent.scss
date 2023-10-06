@@ -1,0 +1,58 @@
+
+@import '../../colors.scss';
+
+.home-page {
+    main {
+    section {
+        .input-text-component {
+  text-align: center;
+  background-color: $color-primary;
+  padding: 20px;
+  border-radius: 8px;
+  color: $color-white;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .input-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: $color-secondary;
+    border: none;
+    border-radius: 4px;
+    color: $color-white;
+    margin-bottom: 10px;
+  }
+
+  .encrypt-button {
+    background-color: $color-tertiary;
+    color: $color-white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-tertiary, 10%);
+    }
+  }
+
+  .result-container {
+    margin-top: 20px;
+
+    .result-crypto {
+      background-color: $color-secondary;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 18px;
+    }
+  }
+}
+    }
+}
+}
+

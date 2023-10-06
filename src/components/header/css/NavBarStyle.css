@@ -1,12 +1,12 @@
 .active {
-  background-color: #1d4ed8;
+  background-color: #0000FF;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a;
+  background-color: #050A30;
   color: white;
   position: sticky;
   top: 0;
@@ -40,12 +40,12 @@ nav .menu {
   right: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
-  width: 2.25rem;
-  height: 2rem;
+  width: 1.9rem;
+  height: 1.5rem;
   cursor: pointer;
 }
 nav .menu span {
-  height: 0.4rem;
+  height: 0.3rem;
   width: 100%;
   background-color: #fff;
   border-radius: 0.2rem;

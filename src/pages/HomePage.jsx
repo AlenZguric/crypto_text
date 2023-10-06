@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import InputCryptoTextComponent from "../components/main/js/InputCryptoTextComponent"
 import InputTextComponent from "../components/main/js/InputTextComponent"
-import "../pages/css/HomePageStyle.css"
+import CopyRight from '../components/footer/js/CopyRight';
+import "../components/main/style/InputTextComponent.css"
 
 const HomePage = () => {
     const [showInputText, setShowInputText] = useState(true);
 
     return (
        <div className='home-page'>
-        <h1>Home Page</h1>
+        <h1>CRYPTO text</h1>
         <label className="toggle-switch">
             <input
                 type="checkbox"
                 checked={showInputText}
                 onChange={() => setShowInputText(!showInputText)}
             />
-            Toggle Switch
+            Zamjeni
         </label>
         <main>
            <section>
@@ -26,6 +27,9 @@ const HomePage = () => {
               {!showInputText && <InputCryptoTextComponent />}
           </section>
         </main>
+        <footer>
+            <CopyRight/>
+        </footer>
        </div>
     );
 };

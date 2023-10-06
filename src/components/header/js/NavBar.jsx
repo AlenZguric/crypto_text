@@ -34,6 +34,8 @@ const NavBar = () => {
         <span></span>
         <span></span>
         <span></span>
+        <span></span>
+
       </div>
       <ul className={`menu-list ${menuOpen ? 'open' : ''}`}>
         <li>
