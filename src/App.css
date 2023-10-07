@@ -1,5 +1,8 @@
 .App {
-    background-color: rgb(255, 255, 255);
+    background-image: url('./images/bacBinary.jpeg');
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;  
     height: 100%;
     width: 100%;
 }

@@ -1,58 +1,178 @@
+@import "../../colors.scss";
 
-@import '../../colors.scss';
-
-.home-page {
-    main {
-    section {
-        .input-text-component {
+.input-text-component {
+  display: flex;
   text-align: center;
-  background-color: $color-primary;
+  flex-direction: row;
   padding: 20px;
   border-radius: 8px;
   color: $color-white;
+  width: 100%;
+  height: 100vh;
 
-  h2 {
-    margin-bottom: 20px;
+.title{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(20, 98, 187, 0.822);
+  height: 40vh;
+  max-width: 500px;
+  border-radius: 10% 40% 30%;
+  text-align: left;
+  
+  h3{
+    font-family: Roboto Mono, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 20px;
+    margin: 20px 20px;
+    text-shadow: -5px 2px 4px rgba(255, 255, 255, 0.5);    
   }
+  article{
+    p{
+      text-align: center;
+      padding: 20px;
+      font-family: Roboto Mono, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
 
-  .input-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: $color-secondary;
-    border: none;
-    border-radius: 4px;
-    color: $color-white;
-    margin-bottom: 10px;
-  }
-
-  .encrypt-button {
-    background-color: $color-tertiary;
-    color: $color-white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: darken($color-tertiary, 10%);
+      &:nth-child(2){
+        padding: 20px;
+      }
     }
   }
+  
+  }
+  .input-text-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    
+   /* Stilizacija glavnog scrollbar-a */
+textarea::-webkit-scrollbar {
+  width: 10px; /* Širina scrollbar-a */
+}
 
-  .result-container {
-    margin-top: 20px;
+/* Stilizacija thumb-a scrollbar-a */
+textarea::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Boja thumb-a */
+  border-radius: 5px; /* Radijus thumb-a */
+}
+
+/* Ostali stilovi za textarea */
+textarea {
+  border: 10px double #1462bbd2;
+  border-radius: 20px ;
+  width: 50%;
+  height: 30vh;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background-color: #1462bbd2;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+    .encrypt-button {
+      border: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 6px 2.5em;
+      outline: none;
+      color: white;
+      font-size:16px; 
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      background: none;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+    
+      &:before,
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 10em;
+        transform: translateX(-50%) translateY(-50%);
+        width: 105%;
+        height: 105%;
+        content: "";
+        z-index: -2;
+        background-size: 400% 400%;
+        background: linear-gradient(
+          60deg,
+          #2916d8,
+          #558cf3,
+          #4eafef,
+          #6667ab,
+          #5073b8,
+          #1098ad,
+          #07b39b,
+          #ffffff
+        );
+      }
+    
+      &:before {
+        filter: blur(7px);
+        transition: all 0.25s ease;
+        animation: pulse 10s infinite ease;
+      }
+    
+      &:after {
+        filter: blur(0.3px);
+      }
+    
+      &:hover:before {
+        width: 115%;
+        height: 115%;
+      }
+    }
+    
+    @keyframes pulse {
+      
+      100% {
+        filter: blur(7px);
+      }
+      50% {
+        filter: blur(20px); 
+    }
+    
+  }
+  .result-container{
+    display: flex;
+    flex-direction: column;
+    .result-crypto{
+      padding: 10px;
+      border: 3px solid black;
+      border-radius: 20px;
+      width: 100%;
+      background-color: #1462bbd2;
+    }
+  }
+}
+  // Media query za mobilne uređaje (max širina ekrana 768px)
+  @media screen and (max-width: 768px) {
+    
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .input-textarea {
+      font-size: 14px;
+    }
+
+    .encrypt-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
 
     .result-crypto {
-      background-color: $color-secondary;
-      padding: 10px;
-      border-radius: 4px;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 }
-    }
-}
-}
-

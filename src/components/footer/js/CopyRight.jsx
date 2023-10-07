@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import "../css/CopyRightStyle.css";
+import { Link } from 'react-router-dom';
 
 function CopyrightYear() {
   const [currentYear, setCurrentYear] = useState(0); // Početna vrijednost 0, bit će zamijenjena prilikom montiranja
@@ -21,8 +22,10 @@ function CopyrightYear() {
   }, [currentYear]);
 
   return (
-    <div>
-      <span>{copyrightText}</span>
+    <div className='copyright'>
+      <Link to="/about" >
+         <p className='copyright-link'>{copyrightText}</p>
+      </Link>
     </div>
   );
 }

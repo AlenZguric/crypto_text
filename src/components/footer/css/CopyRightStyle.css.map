@@ -1,1 +1,1 @@
-{"version":3,"sources":["CopyRightStyle.scss","CopyRightStyle.css"],"names":[],"mappings":"AACA;EACC,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,yBAAA;EACA,gBAAA;EACA,WAAA;ACAD;ADEC;EACG,kBAAA;ACAJ;ADGC;EACG,WAAA;EACA,qBAAA;ACDJ;ADGI;EACE,cAAA;ACDN","file":"CopyRightStyle.css"}
+{"version":3,"sources":["CopyRightStyle.scss","../../colors.scss","CopyRightStyle.css"],"names":[],"mappings":"AAGA;EACC,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,yBCPiB;EDQjB,eAAA;EACA,gBAAA;EACA,cAAA;AEFD;AFKA;EAEI,cAAA;EACA,qBAAA;AEJJ;AFMI;EACE,cAAA;EACA,eAAA;AEJN","file":"CopyRightStyle.css"}

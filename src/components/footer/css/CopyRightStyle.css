@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  background-color: #f5f5f5;
-  font-size: 120px;
-  color: #333;
+  height: 20px;
+  background-color: #d4d6e6;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000000;
 }
-.copyright .copyright-text {
-  margin-right: 10px;
-}
-.copyright .copyright-link {
-  color: #333;
+.copyright a {
+  color: #000000;
   text-decoration: none;
 }
-.copyright .copyright-link:hover {
+.copyright a:hover {
   color: #007bff;
+  cursor: pointer;
 }/*# sourceMappingURL=CopyRightStyle.css.map */
