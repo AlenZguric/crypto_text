@@ -1,0 +1,17 @@
+{
+    "en":{
+        "title": "ovo je na engleskom",
+        "proba": "kaok si proba",
+        "link_home": "Home",
+        "link_share": "Share"
+
+    },
+    "hr":{
+        "title": "ovo je na hrvatskom",
+        "proba": "kaok si proba hrvatski",
+        "link_home": "Početna",
+        "link_share": "Dijeli"
+
+
+    }
+}

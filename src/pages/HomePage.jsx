@@ -3,6 +3,8 @@ import InputCryptoTextComponent from "../components/main/js/InputCryptoTextCompo
 import InputTextComponent from "../components/main/js/InputTextComponent"
 import CopyRight from '../components/footer/js/CopyRight';
 import "../components/main/style/InputTextComponent.css";
+import "../pages/css/HomePageStyle.css";
+import ShareWebApp from '../components/footer/js/ShareWebApp';
 
 const HomePage = () => {
     const [showInputText, setShowInputText] = useState(true);
@@ -28,6 +30,7 @@ const HomePage = () => {
           </section>
         </main>
         <footer>
+            <ShareWebApp/>
             <CopyRight/>
         </footer>
        </div>

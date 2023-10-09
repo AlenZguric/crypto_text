@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../css/NavBarStyle.css';
 import LanguageSelector from './LanguageSelector';
+import { translate } from '../../main/js/Translate';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavBar = () => {
   return (
     <nav ref={navRef} >
       <Link to="/" className="title">
-        Crypto
+        Crypt<span>O</span>
       </Link>
       <div
         className={`menu ${menuOpen ? 'open' : ''}`}
@@ -40,7 +41,7 @@ const NavBar = () => {
       <ul className={`menu-list ${menuOpen ? 'open' : ''}`}>
         <li>
           <NavLink to="/" onClick={() => setMenuOpen(false)}>
-            Početna
+            {translate("link_home")}
           </NavLink>
         </li>
         <li>
@@ -50,7 +51,7 @@ const NavBar = () => {
         </li>
         <li>
           <NavLink to="/share" onClick={() => setMenuOpen(false)}>
-            Podijeli
+           {translate("link_share")}
           </NavLink>
         </li>
         <li>

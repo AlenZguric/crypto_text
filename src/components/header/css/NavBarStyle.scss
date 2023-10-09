@@ -1,17 +1,22 @@
 @import "../../colors.scss";
 
 .active {
-    background-color: $color-tertiary;
+    background-color: $color-green;
+    color: black;
   }
   
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:$color-primary;   
+    background-color:$color-black;   
     color: white;
     position: sticky;
     top: 0;
+    border-bottom: 4px solid rgb(135, 255, 55);
+    span{
+      color: $color-green;
+    }
   
     .title {
       font-size: 1.5rem;

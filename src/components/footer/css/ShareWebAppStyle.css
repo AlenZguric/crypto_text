@@ -1,0 +1,15 @@
+.share-web-app {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.share-web-app .share-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.share-web-app .share-icon:hover {
+  color: rgb(135, 255, 55);
+}/*# sourceMappingURL=ShareWebAppStyle.css.map */
