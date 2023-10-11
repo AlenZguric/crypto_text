@@ -17,7 +17,9 @@ const ShareWebApp = () => {
    useEffect(() => {
      // Dohvaćanje trenutnog URL-a i postavljanje u state
      const url = window.location.href;
-     setCurrentUrl(url);
+     // Brisanje undefined
+     const cleanUrl = url.replace(/ undefined$/, "");
+     setCurrentUrl(cleanUrl);
    }, []);
 
   return (
