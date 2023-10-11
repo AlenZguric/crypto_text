@@ -19,7 +19,7 @@ const ShareWebApp = () => {
      const url = window.location.href;
      // Brisanje undefined
      const cleanUrl = url.replace(/ undefined$/, "");
-     setCurrentUrl(cleanUrl);
+     setCurrentUrl(url, cleanUrl);
    }, []);
 
   return (
@@ -36,7 +36,7 @@ const ShareWebApp = () => {
       </WhatsappShareButton>
         <EmailShareButton
           subject="Pogledajte ovu sjajnu web aplikaciju"
-          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`}        >
+          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`} >
           <EmailIcon size={32} round />
         </EmailShareButton>
       
