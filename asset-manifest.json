@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/crypto_text/static/css/main.72013e8c.css",
-    "main.js": "/crypto_text/static/js/main.3a00eb4e.js",
+    "main.js": "/crypto_text/static/js/main.c358103d.js",
     "static/media/bacBinary.jpeg": "/crypto_text/static/media/bacBinary.ececc34818b34ea7539e.jpeg",
     "index.html": "/crypto_text/index.html",
     "main.72013e8c.css.map": "/crypto_text/static/css/main.72013e8c.css.map",
-    "main.3a00eb4e.js.map": "/crypto_text/static/js/main.3a00eb4e.js.map"
+    "main.c358103d.js.map": "/crypto_text/static/js/main.c358103d.js.map"
   },
   "entrypoints": [
     "static/css/main.72013e8c.css",
-    "static/js/main.3a00eb4e.js"
+    "static/js/main.c358103d.js"
   ]
 }
