@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import {
   FacebookShareButton,
   ViberShareButton,
@@ -10,8 +11,9 @@ import {
   EmailIcon,
 } from "react-share";
 
-const ShareComponent = () => {
-  const currentUrl = window.location.href; // Ili location.href ako želite cijeli URL
+const ShareWebApp = () => {
+   const location = useLocation("https://alenzguric.github.io/crypto_text/");
+  const currentUrl = location.pathname;
 
   return (
     <div>
@@ -35,4 +37,4 @@ const ShareComponent = () => {
   );
 };
 
-export default ShareComponent;
+export default ShareWebApp;
