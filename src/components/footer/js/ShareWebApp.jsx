@@ -5,6 +5,8 @@ import {
   ViberShareButton,
   WhatsappShareButton,
   EmailShareButton,
+  LinkedinShareButton,
+  LinkedinIcon,
   FacebookIcon,
   ViberIcon,
   WhatsappIcon,
@@ -25,6 +27,9 @@ const ShareWebApp = () => {
   return (
     <div>
       <h2>Podijeli ovu stranicu:</h2>
+      <LinkedinShareButton url={currentUrl}>
+        <LinkedinIcon  size={32} round />
+      </LinkedinShareButton>
       <FacebookShareButton url={currentUrl}>
         <FacebookIcon size={32} round />
       </FacebookShareButton>
