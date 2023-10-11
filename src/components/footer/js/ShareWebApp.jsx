@@ -19,6 +19,7 @@ const ShareWebApp = () => {
      const url = window.location.href;
      setCurrentUrl(url);
    }, []);
+
   return (
     <div>
       <h2>Podijeli ovu stranicu:</h2>
@@ -31,12 +32,14 @@ const ShareWebApp = () => {
       <WhatsappShareButton url={currentUrl}>
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
-      <EmailShareButton
-        subject="Pogledajte ovu sjajnu web aplikaciju"
-        body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`}
-      >
-        <EmailIcon size={32} round />
-      </EmailShareButton>
+      {currentUrl && (
+        <EmailShareButton
+          subject="Pogledajte ovu sjajnu web aplikaciju"
+          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`}
+        >
+          <EmailIcon size={32} round />
+        </EmailShareButton>
+      )}
     </div>
   );
 };
