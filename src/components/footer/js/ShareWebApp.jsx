@@ -32,14 +32,12 @@ const ShareWebApp = () => {
       <WhatsappShareButton url={currentUrl}>
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
-      {currentUrl && (
         <EmailShareButton
           subject="Pogledajte ovu sjajnu web aplikaciju"
-          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`}
-        >
+          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`}        >
           <EmailIcon size={32} round />
         </EmailShareButton>
-      )}
+      
     </div>
   );
 };
