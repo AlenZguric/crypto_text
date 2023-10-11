@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <nav ref={navRef} >
-      <Link to="/" className="title">
+      <Link to="/" className="title" >
         Crypt<span>O</span>
       </Link>
       <div

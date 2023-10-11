@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-const AboutUs = () => {
+
+const AboutUsPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+      }, []);
     return (
         <div>
             O NAMA
@@ -41,4 +46,4 @@ Pridružite nam se i iskusite najvišu razinu sigurnosti u svojoj komunikaciji. 
     );
 };
 
-export default AboutUs;
+export default AboutUsPage;

@@ -4,9 +4,9 @@ import "./App.css";
 import NavBar from "./components/header/js/NavBar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Share from "./pages/Share";
-import Contact from "./pages/Contact";
-import AboutUs from "./pages/AboutUs";
+import SharePage from "./pages/SharePage";
+import ContactPage from "./pages/ContactPage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/share" element={<Share />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/share" element={<SharePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutUsPage />} />
       </Routes> 
     </div>
   );

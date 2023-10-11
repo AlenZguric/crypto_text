@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import PageTitle from '../components/header/js/PageTitle';
 import Data from "../translation/Data.json"
 
-const Share = () => {
+const SharePage = () => {
     const currentLanguage = localStorage.getItem('language') || 'hr'; 
     const title = Data[currentLanguage]?.link_share || 'Naslov po defaultu';
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+      }, []);
+
     return (
         <div>
            <PageTitle title={title}/>
@@ -33,4 +38,4 @@ const Share = () => {
     );
 };
 
-export default Share;
+export default SharePage;

@@ -1,0 +1,51 @@
+.contaktMe {
+  display: flex;
+}
+
+.contactLeft {
+  background-color: rgb(135, 255, 55);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contactForm {
+  flex: 1;
+  padding: 20px;
+}
+.contactForm form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contactForm form input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contactForm form input[type=submit]:hover {
+  background-color: darkgreen;
+}
+.contactForm .notificationForm {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  border: 2px solid white;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=ContactFormStyle.css.map */
