@@ -11,7 +11,7 @@ import {
 } from "react-share";
 
 const ShareWebApp = () => {
-  const currentUrl = window.location.href;
+  const currentUrl = window.location.toString();
 
   return (
     <div>
