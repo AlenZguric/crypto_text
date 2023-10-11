@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+
 import {
   FacebookShareButton,
   ViberShareButton,
@@ -11,8 +12,13 @@ import {
 } from "react-share";
 
 const ShareWebApp = () => {
-  const currentUrl = window.location.toString();
+   const [currentUrl, setCurrentUrl] = useState(""); // State za pohranu trenutnog URL-a
 
+   useEffect(() => {
+     // Dohvaćanje trenutnog URL-a i postavljanje u state
+     const url = window.location.href;
+     setCurrentUrl(url);
+   }, []);
   return (
     <div>
       <h2>Podijeli ovu stranicu:</h2>
