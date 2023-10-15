@@ -1,0 +1,47 @@
+.contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(157, 199, 202, 0.7411764706);
+  height: 100%;
+}
+.contact-me h2 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "roboto mono", sans-serif;
+  padding: 35px;
+}
+.contact-me .block-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+.contact-me .block-contact-info .contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+.contact-me .block-contact-info .contact-info:hover {
+  scale: 1.02;
+  background-color: rgba(255, 255, 255, 0.468);
+  border-radius: 20px;
+}
+.contact-me .block-contact-info .contact-info .react-share__ShareButton {
+  margin-right: 10px;
+}
+.contact-me .block-contact-info .contact-info a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-me .block-contact-info {
+    align-items: center;
+  }
+}/*# sourceMappingURL=ContactMeStyle.css.map */

@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import SharePage from "./pages/SharePage";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import CryptoPage from "./pages/CryproPage";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/crypto" element={<CryptoPage />} />
         <Route path="/share" element={<SharePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUsPage />} />

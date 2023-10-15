@@ -1,3 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+@import "../../components/Animacije/ColorText.css";
 .home-page {
-  background: rgba(0, 0, 0, 0.899);
+  display: flex;
+  flex-direction: column;
+}
+.home-page .title {
+  display: flex;
+}
+.home-page .title main {
+  background-image: url("../../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-page .title main h1 {
+  text-transform: uppercase;
+  font-family: "Roboto mono", sans-serif;
+  padding-bottom: 20px;
+  font-size: 46px;
+  margin: 40px 0px 20px 30px;
+  color: #fdfdfd;
+}
+.home-page .title main h1 span {
+  text-transform: capitalize;
+  color: #87ff37;
+  margin: 0px 0px 20px 130px;
+}
+.home-page .title main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.home-page .title main section h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto mono", sans-serif;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.home-page .title main section ul {
+  list-style: none;
+}
+.home-page .title main section ul li {
+  color: #fdfdfd;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 6px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+}
+.home-page .title main section ul li:nth-child(1) {
+  margin-left: -50px;
+  animation: colorChange 4s linear 3;
+}
+.home-page .title main section ul li:nth-child(2) {
+  margin-left: -40px;
+  animation: colorChange 4s linear 0.5s 3;
+}
+.home-page .title main section ul li:nth-child(3) {
+  margin-left: -30px;
+  animation: colorChange 4s linear 1s 3;
+}
+.home-page .title main section ul li:nth-child(4) {
+  margin-left: -20px;
+  animation: colorChange 4s linear 1.5s 3;
+}
+.home-page .title main section ul li:nth-child(5) {
+  margin-left: -10px;
+  animation: colorChange 4s linear 2s 3;
+}
+.home-page .title .home-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+}
+.home-page .title .home-buttons .crypto_btn {
+  width: 160px;
+  cursor: pointer;
+  margin: 20px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+.home-page .title .home-buttons .crypto_btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.home-page .title .home-buttons .crypto_btn:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.home-page .title .home-buttons .crypto_btn:focus {
+  outline: none;
+}
+.home-page .title .home-buttons .crypto_btn.crypto_btn {
+  background-image: linear-gradient(to right, #87ff37, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.home-page .title .home-buttons .about_btn {
+  width: 160px;
+  cursor: pointer;
+  margin: 20px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+.home-page .title .home-buttons .about_btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.home-page .title .home-buttons .about_btn:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.home-page .title .home-buttons .about_btn:focus {
+  outline: none;
+}
+.home-page .title .home-buttons .about_btn.about_btn {
+  background-image: linear-gradient(to right, #87ff37, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(73, 100, 89, 0.75);
+}
+.home-page .useTec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.8980392157);
+}
+.home-page .useTec .use_technology {
+  flex: 1;
+}
+.home-page .useTec .shareWebApp {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-page {
+    display: flex;
+  }
+  .home-page .title {
+    height: 100%;
+  }
+  .home-page .title main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .home-page .title main h1 {
+    font-size: 24px;
+    margin: 10px 0 25px 20px;
+    justify-content: flex-start;
+  }
+  .home-page .title main h1 span {
+    font-size: 16px;
+    margin: 0 0 10px 60px;
+    font-size: 40px;
+  }
+  .home-page .title main section h2 {
+    font-size: 18px;
+  }
+  .home-page .title main section ul {
+    margin-top: 30px;
+  }
+  .home-page .title main section ul li {
+    font-size: 14px;
+  }
+  .home-page .title .home-buttons {
+    margin-top: 20px;
+  }
+  .home-page .title .home-buttons .crypto_btn {
+    width: 120px;
+    height: 40px;
+    margin: 15px;
+  }
+  .home-page .title .home-buttons .crypto_btn a {
+    font-size: 16px;
+  }
+  .home-page .title .home-buttons .about_btn {
+    width: 120px;
+    height: 40px;
+    margin: 15px;
+  }
+  .home-page .title .home-buttons .about_btn a {
+    font-size: 16px;
+  }
+  .home-page .useTec {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .home-page .useTec .use_technology {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page .useTec .use_technology .title {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .home-page .useTec .use_technology .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .home-page .useTec .use_technology .shareWebApp {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=HomePageStyle.css.map */

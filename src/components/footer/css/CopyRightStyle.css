@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
-  background-color: #d4d6e6;
-  font-size: 12px;
+  height: 60px;
+  background-color: rgba(157, 199, 202, 0.7411764706);
+  font-size: 14px;
   font-weight: 500;
   color: #000000;
 }
@@ -13,6 +13,6 @@
   text-decoration: none;
 }
 .copyright a:hover {
-  color: #007bff;
+  color: #87ff37;
   cursor: pointer;
 }/*# sourceMappingURL=CopyRightStyle.css.map */

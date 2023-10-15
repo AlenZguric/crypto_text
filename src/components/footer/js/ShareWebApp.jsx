@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import "../css/ShareWebAppStyle.css";
 import {
   FacebookShareButton,
   ViberShareButton,
@@ -22,28 +22,32 @@ const ShareWebApp = () => {
      // Brisanje undefined
      const cleanUrl = url.replace(/ undefined$/, "");
      setCurrentUrl(url, cleanUrl);
-   }, []);
+   }, [currentUrl]);
 
   return (
-    <div>
-      <h2>Podijeli ovu stranicu:</h2>
+    <div className="shareWebApp">
+      <div className="title">
+        <h2 >Podijeli na druge platforme</h2>
+      </div>
+      <div className="shareWebButtons">
       <LinkedinShareButton url={currentUrl}>
-        <LinkedinIcon  size={32} round />
+        <LinkedinIcon  size={30} round />
       </LinkedinShareButton>
       <FacebookShareButton url={currentUrl}>
-        <FacebookIcon size={32} round />
+        <FacebookIcon size={30} round />
       </FacebookShareButton>
       <ViberShareButton url={currentUrl}>
-        <ViberIcon size={32} round />
+        <ViberIcon size={30} round />
       </ViberShareButton>
       <WhatsappShareButton url={currentUrl}>
-        <WhatsappIcon size={32} round />
+        <WhatsappIcon size={30} round />
       </WhatsappShareButton>
         <EmailShareButton
           subject="Pogledajte ovu sjajnu web aplikaciju"
-          body={`Pogledajte ovu sjajnu web aplikaciju:\n\n${currentUrl}`} >
-          <EmailIcon size={32} round />
+          body={`Web app možeš skinuti na:\n\n${currentUrl}`} >
+          <EmailIcon size={30} round />
         </EmailShareButton>
+      </div>
       
     </div>
   );

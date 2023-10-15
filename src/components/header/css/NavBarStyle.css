@@ -1,5 +1,5 @@
 .active {
-  background-color: rgb(135, 255, 55);
+  background-color: #87ff37;
   color: black;
 }
 
@@ -7,14 +7,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.899);
+  background-color: rgba(0, 0, 0, 0.8980392157);
   color: white;
   position: sticky;
   top: 0;
   border-bottom: 4px solid rgb(135, 255, 55);
 }
 nav span {
-  color: rgb(135, 255, 55);
+  color: #87ff37;
 }
 nav .title {
   font-size: 1.5rem;

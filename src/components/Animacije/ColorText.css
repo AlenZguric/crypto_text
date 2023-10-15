@@ -1,0 +1,14 @@
+@keyframes colorChange {
+    0%, 100% {
+      color: #88ff00; /* Početna i krajnja boja */
+    }
+    25% {
+      color: #e9e6e1; /* Prva nijansa */
+    }
+    50% {
+      color: #33cc33; /* Druga nijansa */
+    }
+    75% {
+      color: #009900; /* Treća nijansa */
+    }
+  }

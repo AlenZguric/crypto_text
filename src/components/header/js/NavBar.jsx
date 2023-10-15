@@ -45,6 +45,11 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/crypto" onClick={() => setMenuOpen(false)}>
+            Šifriraj
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
             Kontakt
           </NavLink>
