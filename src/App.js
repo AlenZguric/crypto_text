@@ -8,6 +8,7 @@ import SharePage from "./pages/SharePage";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import CryptoPage from "./pages/CryproPage";
+import PopUp from "../src/components/header/js/PopUp"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <header>
       <NavBar/> 
       </header>
+      <PopUp/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/crypto" element={<CryptoPage />} />
