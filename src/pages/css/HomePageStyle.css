@@ -233,6 +233,9 @@
     padding: 0;
     margin: 0;
   }
+  .home-page .useTec .use_technology .icons img {
+    filter: drop-shadow(4px 4px 10px white);
+  }
   .home-page .useTec .use_technology .shareWebApp {
     justify-content: center;
   }

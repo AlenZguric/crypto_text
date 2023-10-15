@@ -31,6 +31,7 @@
   height: 70px;
   margin: 0 10px;
   justify-content: space-around;
+  filter: drop-shadow(0 0 1rem white);
 }
 .use_technology .icons img:hover {
   scale: 1.2;

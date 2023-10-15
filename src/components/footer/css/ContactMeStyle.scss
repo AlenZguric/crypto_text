@@ -1,52 +1,52 @@
 @import "../../colors.scss";
 
 .contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: $color-secondary;
+  height: 100%;
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "roboto mono", sans-serif;
+    padding: 35px;
+  }
+  .block-contact-info {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: $color-secondary;
-    height: 100%;
-    h2 {
-      font-size: 24px;
-      font-weight: 500;
-      font-family: "roboto mono", sans-serif;
-      padding: 35px;
-    }
-    .block-contact-info{
-        display: flex;
-        flex-direction: column;
-        justify-items: flex-start;
-  
+    flex-direction: column;
+    justify-items: flex-start;
+
     .contact-info {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 10px 0;
-      &:hover{
+      &:hover {
         scale: 1.02;
         background-color: rgba(255, 255, 255, 0.468);
         border-radius: 20px;
       }
-  
+
       .react-share__ShareButton {
         margin-right: 10px;
       }
-  
+
       a {
         text-decoration: none;
         color: #333;
         font-weight: bold;
       }
     }
-  }}
+  }
+}
 
-  @media screen and (max-width: 768px) {
-    .contact-me{
-        flex-direction: column;
-        .block-contact-info{
-          align-items: center;
-        }
+@media screen and (max-width: 768px) {
+  .contact-me {
+    flex-direction: column;
+    .block-contact-info {
+      align-items: center;
     }
   }
-  
+}

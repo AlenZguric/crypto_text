@@ -1,112 +1,111 @@
 @import "../../colors.scss";
 
 .active {
-    background-color: $color-green;
-    color: black;
+  background-color: $color-green;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-black;
+  color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 4px solid rgb(135, 255, 55);
+  span {
+    color: $color-green;
   }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:$color-black;   
+
+  .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
     color: white;
-    position: sticky;
-    top: 0;
-    border-bottom: 4px solid rgb(135, 255, 55);
-    span{
-      color: $color-green;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-      margin: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-    }
-  
-    ul {
-      display: flex;
-      list-style: none;
-  
-      li {
-        a {
-          display: block;
-          text-decoration: none;
-          color: white;
-          padding: 0.5rem;
-          margin: 0 0.5rem;
-          border-radius: 0.5rem;
-  
-          &:hover {
-            background-color: #172554;
-          }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: #172554;
         }
       }
     }
-  
-    .menu {
-      display: none;
-      position: absolute;
-      top: 0.75rem;
-      right: 0.5rem;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 1.9rem;
-      height: 1.5rem;
-      cursor: pointer;
-  
-      span {
-        height: 0.3rem;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 0.2rem;
-      }
-    }
-  
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.9rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+    span {
+      height: 0.3rem;
       width: 100%;
-      height: 100%;
-      background-color: rgba(29, 78, 216, 0.8); /* Prozirna plava boja */
-      z-index: 999;
+      background-color: #fff;
+      border-radius: 0.2rem;
     }
-  
-    @media (max-width: 480px) {
-      .menu {
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 78, 216, 0.8); /* Prozirna plava boja */
+    z-index: 999;
+  }
+
+  @media (max-width: 480px) {
+    .menu {
+      display: flex;
+    }
+
+    .overlay {
+      display: block;
+    }
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+
+      &.open {
         display: flex;
       }
-  
-      .overlay {
-        display: block;
-      }
-  
-      flex-direction: column;
-      align-items: flex-start;
-  
-      ul {
-        display: none;
-        flex-direction: column;
+
+      li {
         width: 100%;
-        margin-bottom: 0.25rem;
-  
-        &.open {
-          display: flex;
-        }
-  
-        li {
-          width: 100%;
-          text-align: center;
-  
-          a {
-            margin: 0.2rem 0.5rem;
-          }
+        text-align: center;
+
+        a {
+          margin: 0.2rem 0.5rem;
         }
       }
     }
   }
-  
+}
