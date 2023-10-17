@@ -42,18 +42,8 @@ const InputTextComponent = () => {
   return (
     <div className="input-text-component">
       <div className="title">
-        <h3><span >W</span><span>elcom</span><span>E</span><span>!</span></h3>
         
-        <article>
-          <p>Šifrirajte i zaštitite svoje poruke s lakoćom.</p>
-          <ul>
-            <li>Sigurnost na prvom mjestu</li>
-            <li>Dostupno na svim uređajima</li>
-            <li>Jednostavno i brzo</li>
-            <li> Podijelite sa sigurnošću</li>
-            <li>Besplatno i dostupno svima</li>
-          </ul>
-        </article>
+       
       </div>
       <div className="input-text-area">
         <textarea

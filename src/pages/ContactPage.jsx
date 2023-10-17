@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import ContactForm from '../components/footer/js/ContactForm';
+import PopUp from '../components/header/js/PopUp';
 
 
 const ContactPage = () => {
@@ -10,6 +11,7 @@ const ContactPage = () => {
 
     return (
         <div>
+            <PopUp/>
             <ContactForm/>
         </div>
     );

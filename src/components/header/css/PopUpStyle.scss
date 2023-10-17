@@ -1,32 +1,76 @@
+@import "../../colors.scss";
+
 .cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 40%;
+  min-width: 650px;
+  height: 70%;
+  background-color: $color-black;
   color: #fff;
   text-align: center;
+  border: 2px solid $color-green;
+  border-radius: 10px;
   padding: 15px;
   z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   .cookie-paragaf {
-    p {
-      margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    h3 {
+      font-size: 40px;
+      span {
+        color: $color-green;
+        font-family: "roboto mono", sans-serif;
+      }
+    }
+
+    .text {
+      p {
+        padding-top: 60px;
+        margin-top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+        font-weight: 400;
+      }
     }
   }
+}
 
-  .cookie-btn {
-    button {
-      background-color: #4caf50;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
+.cookie-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  button {
+    display: flex;
+    background-color: #4caf50;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    a {
       text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
+      color: #fff;
     }
   }
 }
@@ -35,5 +79,37 @@
   .cookie-banner {
     padding: 10px;
     height: 500px;
+    min-width: 100%;
+    padding: 6px;
+    .cookie-paragaf {
+      margin: 0;
+      width: 100%;
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 45px;
+        p {
+          margin: 0px;
+          margin-bottom: 40px;
+          width: 90%;
+          padding: 0px;
+          align-items: center;
+        }
+      }
+    }
+    .cookie-btn {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      button {
+        height: 35px;
+        justify-content: center;
+        margin: 10px;
+        padding: 0;
+        width: 130px;
+      }
+    }
   }
 }

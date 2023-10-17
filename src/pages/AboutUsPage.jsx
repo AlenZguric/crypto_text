@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-
+import PopUp from '../components/header/js/PopUp';
 
 const AboutUsPage = () => {
 
@@ -8,6 +8,8 @@ const AboutUsPage = () => {
       }, []);
     return (
         <div>
+                  <PopUp/>
+
             O NAMA
             <p>
             Opis:

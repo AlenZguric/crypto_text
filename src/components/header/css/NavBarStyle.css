@@ -7,7 +7,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8980392157);
+  background-color: hsla(0, 0%, 0%, 0.898);
   color: white;
   position: sticky;
   top: 0;
@@ -15,6 +15,7 @@ nav {
 }
 nav span {
   color: #87ff37;
+  font-family: "roboto mono", sans-serif;
 }
 nav .title {
   font-size: 1.5rem;

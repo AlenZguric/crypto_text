@@ -7,6 +7,7 @@ import ShareWebApp from '../components/footer/js/ShareWebApp';
 import "../components/footer/css/ShareWebAppStyle.css";
 import UseTechnology from '../components/footer/js/UseTechnology';
 import ContactMe from '../components/footer/js/ContactMe';
+import PopUp from '../components/header/js/PopUp';
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
 
     return (
        <div className='home-page'>
+        <PopUp/>
             <div className="title">
                 <main>
                     <h1>Dobrodoši  <br /><span>CryptoText</span></h1>

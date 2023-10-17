@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import PageTitle from '../components/header/js/PageTitle';
 import Data from "../translation/Data.json"
+import PopUp from '../components/header/js/PopUp';
 
 const SharePage = () => {
     const currentLanguage = localStorage.getItem('language') || 'hr'; 
@@ -12,6 +13,7 @@ const SharePage = () => {
 
     return (
         <div>
+            <PopUp/>
            <PageTitle title={title}/>
            PODIJELI APP 
            <div>
