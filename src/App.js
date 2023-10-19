@@ -17,7 +17,7 @@ function App() {
       <NavBar/> 
       </header>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="" element={<HomePage />} />
         <Route path="/crypto" element={<CryptoPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUsPage />} />

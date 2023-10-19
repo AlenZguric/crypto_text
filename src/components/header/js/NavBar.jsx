@@ -40,7 +40,7 @@ const NavBar = () => {
       </div>
       <ul className={`menu-list ${menuOpen ? 'open' : ''}`}>
         <li>
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>
+          <NavLink to="" onClick={() => setMenuOpen(false)}>
             {translate("link_home")}
           </NavLink>
         </li>
