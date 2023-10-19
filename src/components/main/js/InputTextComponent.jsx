@@ -34,11 +34,7 @@ const InputTextComponent = () => {
     setInputText(''); // Isprazni textarea nakon šifriranja
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      handleEncrypt();
-    }
-  };
+
 
   return (
     <div className="input-text-component">
@@ -54,21 +50,20 @@ const InputTextComponent = () => {
           value={inputText}
           onChange={handleInputChange}
           className="input-textarea"
-          onKeyPress={handleKeyPress}
         ></textarea>
         {errorMessage && <p className="error-message ">{errorMessage}</p>}
         <div className='textarea_btn'>
-          <button onClick={handleEncrypt}
-                  onKeyPress={handleKeyPress}
+          <button onClick={handleEncrypt }
+                 
                    className="encrypt-button">
             Šifriraj
           </button>
         </div>
         {showResult && (
           <div className="result-container">
-            <textarea className="result-crypto" >
+            <p className="result-crypto" >
               {encryptedText}
-              </textarea>
+              </p>
             <ShareCryptedText encryptedText={encryptedText} />
           </div>
         )}

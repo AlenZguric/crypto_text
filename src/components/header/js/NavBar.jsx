@@ -54,11 +54,7 @@ const NavBar = () => {
             Kontakt
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/share" onClick={() => setMenuOpen(false)}>
-           {translate("link_share")}
-          </NavLink>
-        </li>
+        
         <li>
           <NavLink to="/about" onClick={() => setMenuOpen(false)}>
             O App

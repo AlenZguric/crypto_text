@@ -72,11 +72,44 @@
     .result-container {
       position: relative;
       .result-crypto {
-        textarea {
-          letter-spacing: 10px;
-        }
+        min-width: 500px;
+      min-height: 150px;
+      border: 3px solid $color-white;
+      border-radius: 10px;
+      background-color: $color-green;
+      padding: 15px;
+      color: black;
+      font-family: "roboto mono", sans-serif;
+      font-weight: 600;
+      overflow: auto;
+    scrollbar-width: thin;
+    max-height: 200px; 
+    max-width: 500px;
       }
     }
     
   }
 }
+@media screen and (max-width: 768px){
+  .input-text-component{
+    .title{
+      h3{
+        font-size: 14px;
+      }
+    }
+    .input-text-area{
+      padding: 8px;
+       textarea{
+     width: 100%;
+     min-width: 350px;
+    }
+    .result-container{
+      width: 100%;
+      .result-crypto{
+        min-width: 350px;
+        width: 100%;
+      }
+    }
+  }
+  
+}}

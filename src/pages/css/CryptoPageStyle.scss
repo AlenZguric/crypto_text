@@ -120,3 +120,38 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .crypto-page{
+    .crypto-title{
+      h2{
+        margin-top: 10px;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+      }
+      p{
+        line-height: normal;
+        font-size: 16px;
+        padding: 6px 0px 10px 6px;
+        font-family: 'Courier New', Courier, monospace;
+        &:nth-child(3){
+          font-style: italic;
+          padding-top: 10px;
+        }
+      }
+    }
+   .crypto-history{
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 6px;
+    a{
+      font-size: 12px;
+      height: 25px;
+      width: 95px;
+    }
+   }
+  }
+}

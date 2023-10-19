@@ -14,7 +14,6 @@ const InputCryptoTextComponent = () => {
   };
 
   const handleDecrypt = () => {
-    // Obrnite mapiranje simbola kako biste dobili originalni tekst
     const decrypted = encryptedText
       .split('') // Razdvajanje šifriranog teksta na karaktere
       .map((char) => {

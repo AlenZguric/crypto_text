@@ -48,12 +48,12 @@ const handleCopy = () => {
 
 return (
   <div className='share-crypto-text-btn'>
-    <button onClick={handleShare}>
+    <button className='share-button' onClick={handleShare}>
       <i className="material-icons" style={{ fontSize: '24px' }}>
         share
       </i>
     </button>
-    <button onClick={handleCopy}>
+    <button className='copy-button' onClick={handleCopy}>
       <i className="material-icons" style={{ fontSize: '24px' }}>
         content_copy
       </i>
