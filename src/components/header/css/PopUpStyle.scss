@@ -18,6 +18,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+  .flags-right{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
 
   .cookie-paragaf {
     display: flex;

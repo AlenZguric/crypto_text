@@ -1,1 +1,94 @@
-/*# sourceMappingURL=InputTextComponent.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+@keyframes textShake {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.input-text-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.input-text-component .title {
+  display: flex;
+}
+.input-text-component .title h3 {
+  color: white;
+  font-family: "roboto mono", sans-serif;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.input-text-component .input-text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+.input-text-component .input-text-area .error-message {
+  position: absolute;
+  top: 55%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0px 15px 0px 15px;
+  padding: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.input-text-component .input-text-area textarea {
+  min-width: 500px;
+  min-height: 150px;
+  border: 3px solid #fdfdfd;
+  border-radius: 10px;
+  background-color: #87ff37;
+  padding: 15px;
+  color: black;
+  font-family: "roboto mono", sans-serif;
+  font-weight: 600;
+}
+.input-text-component .input-text-area textarea::-moz-placeholder {
+  color: black;
+  text-align: center; /* Centriranje po x-osi */
+  animation: textShake 2s infinite;
+}
+.input-text-component .input-text-area textarea::placeholder {
+  color: black;
+  text-align: center; /* Centriranje po x-osi */
+  animation: textShake 2s infinite;
+}
+.input-text-component .input-text-area .textarea_btn {
+  align-items: center;
+  padding: 15px;
+}
+.input-text-component .input-text-area .textarea_btn button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  color: black;
+  font-family: "roboto mono", sans-serif;
+  font-weight: 600;
+  border: 3px solid white;
+  border-radius: 6px;
+  background-color: #87ff37;
+}
+.input-text-component .input-text-area .result-container {
+  position: relative;
+}
+.input-text-component .input-text-area .result-container .result-crypto textarea {
+  letter-spacing: 10px;
+}/*# sourceMappingURL=InputTextComponent.css.map */

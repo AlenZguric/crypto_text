@@ -17,6 +17,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.cookie-banner .flags-right {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
 .cookie-banner .cookie-paragaf {
   display: flex;
   flex-direction: column;

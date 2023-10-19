@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import LanguageSelector from "../js/LanguageSelector";
 import { Link } from "react-router-dom";
 import "../css/PopUpStyle.css";
 
@@ -34,6 +35,9 @@ const PopUp = () => {
 
   return (
     <div className="cookie-banner">
+      <div className="flags-right">
+        <LanguageSelector/>
+      </div>
       <div className="cookie-paragaf">
         <h3>
           Crypt<span>O</span>

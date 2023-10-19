@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { shareOnMobile } from 'react-mobile-share';
+import "../style/ShareCryptedTextStyle.css";
 
 const ShareCryptedText = ({ encryptedText }) => {
 
@@ -46,7 +47,7 @@ const handleCopy = () => {
 };
 
 return (
-  <div>
+  <div className='share-crypto-text-btn'>
     <button onClick={handleShare}>
       <i className="material-icons" style={{ fontSize: '24px' }}>
         share

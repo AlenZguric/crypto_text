@@ -11,12 +11,13 @@ const InputTextComponent = () => {
   const handleInputChange = (event) => {
     setInputText(event.target.value);
     setShowResult(false);
+    setErrorMessage('');
   };
 
   const handleEncrypt = () => {
     // Provjera je li unesen tekst
     if (!inputText) {
-      setErrorMessage('Unesite text.'); // Postavljanje obavijesti o pogrešci
+      setErrorMessage('* Unesite text *'); // Postavljanje obavijesti o pogrešci
       return;
     }
 
@@ -42,6 +43,7 @@ const InputTextComponent = () => {
   return (
     <div className="input-text-component">
       <div className="title">
+        <h3>Šifriraj text...</h3>
         
        
       </div>
@@ -49,21 +51,24 @@ const InputTextComponent = () => {
         <textarea
           
           placeholder="Unesite tekst ovdje..."
-          color="white"
           value={inputText}
           onChange={handleInputChange}
           className="input-textarea"
           onKeyPress={handleKeyPress}
         ></textarea>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
-        <div>
-          <button onClick={handleEncrypt} className="encrypt-button">
+        {errorMessage && <p className="error-message ">{errorMessage}</p>}
+        <div className='textarea_btn'>
+          <button onClick={handleEncrypt}
+                  onKeyPress={handleKeyPress}
+                   className="encrypt-button">
             Šifriraj
           </button>
         </div>
         {showResult && (
           <div className="result-container">
-            <span className="result-crypto">{encryptedText}</span>
+            <textarea className="result-crypto" >
+              {encryptedText}
+              </textarea>
             <ShareCryptedText encryptedText={encryptedText} />
           </div>
         )}

@@ -1,0 +1,82 @@
+@import "../../Animacije/Shake.scss";
+
+@import "../../Fonts.scss";
+@import "../../colors.scss";
+@import "../../Animacije/Mixin.scss";
+.input-text-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .title {
+    display: flex;
+
+    h3 {
+      color: white;
+      font-family: "roboto mono", sans-serif;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+  }
+  .input-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    .error-message {
+      position: absolute;
+      top: 55%;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 0px 15px 0px 15px;
+      padding: 6px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 600;
+    }
+
+    textarea {
+      min-width: 500px;
+      min-height: 150px;
+      border: 3px solid $color-white;
+      border-radius: 10px;
+      background-color: $color-green;
+      padding: 15px;
+      color: black;
+      font-family: "roboto mono", sans-serif;
+      font-weight: 600;
+      &::placeholder {
+        color: black;
+        @include center-xy;
+        animation: textShake 2s infinite;
+      }
+    }
+    .textarea_btn {
+      align-items: center;
+      padding: 15px;
+      button {
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        color: black;
+        font-family: "roboto mono", sans-serif;
+        font-weight: 600;
+        border: 3px solid white;
+        border-radius: 6px;
+        background-color: $color-green;
+      }
+    }
+    .result-container {
+      position: relative;
+      .result-crypto {
+        textarea {
+          letter-spacing: 10px;
+        }
+      }
+    }
+    
+  }
+}

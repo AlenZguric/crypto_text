@@ -29,7 +29,7 @@ export default function CryproPage() {
         <label className="iphone-toggle-switch">
           <input
             type="checkbox"
-            checked={showInputText}
+            checked={!showInputText}
             onChange={() => setShowInputText(!showInputText)}
           />
 
@@ -42,9 +42,11 @@ export default function CryproPage() {
         <Link to="/history">Povijest...</Link>
       </div>
       <main>
-        <section>{showInputText && <InputTextComponent />}</section>
+        <section>
+          {showInputText && <InputTextComponent />}
+        {!showInputText && <InputCryptoTextComponent />}
+        </section>
 
-        <section>{!showInputText && <InputCryptoTextComponent />}</section>
       </main>
       <footer>
         <CopyRight />

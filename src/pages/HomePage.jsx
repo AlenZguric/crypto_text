@@ -21,7 +21,7 @@ const HomePage = () => {
         <PopUp/>
             <div className="title">
                 <main>
-                    <h1>Dobrodoši  <br /><span>CryptoText</span></h1>
+                    <h1>Dobrodošli,  <br /><span>CryptoText</span></h1>
                     <section>
                     <h2>Besplatna Web Aplikacija za šifriranje texta...</h2>
                     <ul>
