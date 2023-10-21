@@ -11,6 +11,15 @@ const PopUp = () => {
 
     if (storedCookieAcceptance === "true") {
       setIsCookieAccepted(true);
+
+      if (!localStorage.getItem("crypto")) {
+        localStorage.setItem("crypto", JSON.stringify([]));
+      }
+  
+      // Provjeri postoji li lokalno skladište za dešifriranje
+      if (!localStorage.getItem("decrypto")) {
+        localStorage.setItem("decrypto", JSON.stringify([]));
+      }
     }
   }, []);
 
