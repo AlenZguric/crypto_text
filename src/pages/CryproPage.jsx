@@ -4,6 +4,8 @@ import InputTextComponent from "../components/main/js/InputTextComponent";
 import PopUp from "../components/header/js/PopUp";
 import CopyRight from "../components/footer/js/CopyRight";
 import "../pages/css/CryptoPageStyle.css";
+import "../components/main/style/InputCryptoTextComponentStyle.css";
+import "../components/main/style/InputTextComponent.css";
 import { Link } from "react-router-dom";
 
 export default function CryproPage() {

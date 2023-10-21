@@ -16,17 +16,20 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .language-selector {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1px;
 
     button {
+      margin: 0;
       img {
         width: 35px;
         height: 17px;
         cursor: pointer;
+        margin: 0;
       }
     }
   }
