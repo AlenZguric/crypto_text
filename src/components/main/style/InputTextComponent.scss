@@ -73,47 +73,46 @@
       position: relative;
       .result-crypto {
         min-width: 500px;
-      min-height: 150px;
-      border: 3px solid $color-white;
-      border-radius: 10px;
-      background-color: $color-green;
-      padding: 15px;
-      color: black;
-      font-family: "roboto mono", sans-serif;
-      font-weight: 600;
-      overflow: auto;
-    scrollbar-width: thin;
-    max-height: 200px; 
-    max-width: 500px;
+        min-height: 150px;
+        border: 3px solid $color-white;
+        border-radius: 10px;
+        background-color: $color-green;
+        padding: 15px;
+        color: black;
+        font-family: "roboto mono", sans-serif;
+        font-weight: 600;
+        overflow: auto;
+        scrollbar-width: thin;
+        max-height: 200px;
+        max-width: 500px;
       }
     }
-    
   }
 }
-@media screen and (max-width: 768px){
-  .input-text-component{
+@media screen and (max-width: 768px) {
+  .input-text-component {
     width: 100%;
-    .title{
-      h3{
+    .title {
+      h3 {
         font-size: 14px;
       }
     }
-    .input-text-area{
+    .input-text-area {
       padding: 8px;
       width: 100%;
 
-       textarea{
-     width: 100%;
-     min-width: 350px;
-    }
-    .result-container{
-      width: 100%;
-      .result-crypto{
+      textarea {
         width: 100%;
-        max-width: none;
-        min-width: 100%;
+        min-width: 350px;
+      }
+      .result-container {
+        width: 100%;
+        .result-crypto {
+          width: 100%;
+          max-width: none;
+          min-width: 100%;
+        }
       }
     }
   }
-  
-}}
+}
