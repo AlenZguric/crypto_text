@@ -1,0 +1,50 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        display: block;
+        margin: 0 auto;
+      }
+  
+    .modal-content {
+      background-color: white;
+      width: 100%;
+      max-width: 21cm;
+      padding: 1.5cm;
+      height: 100%; // Dodajte visinu za .modal-content
+  
+      @media screen and (max-width: 768px) {
+        width: calc(100% - 20px);
+        padding: 10px;
+        height: auto; // Resetirajte visinu za mobilne uređaje
+      }
+  
+      @media screen and (min-width: 769px) {
+        height: 80vh; // Postavite visinu na 80% viewport visine na desktopu
+      }
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      strong {
+        color: green;
+      }
+  
+      div {
+        margin: 10px 0;
+        max-height: 60vh;
+        overflow-y: auto;
+      }
+  
+      
+    }
+  }
+  
