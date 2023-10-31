@@ -1,0 +1,69 @@
+@import "../../components/colors.scss";
+@import "../../components/Fonts.scss";
+
+.History-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color:$color-black;
+    .title{
+        color: white;
+        padding: 20px;
+        h2{
+            font-size: 36px;
+            font-family: "roboto mono", sans-serif;
+            font-weight: 600;
+        }
+        p{
+            margin: 5px 0 10px 0;
+            font-style: italic;
+            font-family: "roboto mono", sans-serif;
+
+            
+        }
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        section{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;  
+            .crypto_items{
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+            }
+            .decrypto_items{
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+            }
+        }
+    }
+    footer{
+        margin-top: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .History-page{
+        main{
+            
+            section{
+                flex-direction: column;
+                width: 100%;
+                .crypto_items{
+                    width: 100%;
+                    padding: 10px;
+                }
+                .decrypto_items{
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    
+}

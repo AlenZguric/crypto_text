@@ -1,34 +1,38 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
+import "../style/HistorySaveTextItemStyle.css";
 
 const HistorySaveTextItem = ({ data, onDelete, onOpenModal }) => {
   const handleDelete = () => {
     onDelete(data.id);
   };
 
-  // Ograničite prikaz inputText i encryptedText na prvih 40 znakova
-  const truncatedInputText =
-    data.inputText.length > 40 ? data.inputText.slice(0, 40) + "  ..." : data.inputText;
-  const truncatedEncryptedText =
-    data.encryptedText.length > 40
-      ? data.encryptedText.slice(0, 40) + "..."
-      : data.encryptedText;
+  // Ograničen prikaz inputText i encryptedText na prvih 40 znakova
+  const truncatedInputText = data.inputText
+  ? data.inputText.length > 40 ? data.inputText.slice(0, 40) + "  ..." : data.inputText
+  : "";
+
+const truncatedEncryptedText = data.encryptedText
+  ? data.encryptedText.length > 40 ? data.encryptedText.slice(0, 40) + "..."
+  : data.encryptedText
+  : "";
+
 
   const handleItemClicked = () => {
     onOpenModal();
   };
 
   return (
-    <div className="history-item" onClick={handleItemClicked}>
-      <div className="title">
-        <div>
-          <span>{data.timestamp}</span>
+    <div className="history-item" >
+      <div className="title_item" onClick={handleItemClicked}>
+        <div className="time">
+          <p >{data.timestamp}</p>
         </div>
-        <div>
-          <span>{truncatedInputText}</span>
+        <div className="input">
+          <p >{truncatedInputText}</p>
         </div>
-        <div>
-          <span>{truncatedEncryptedText}</span>
+        <div className="encrypt">
+          <p >{truncatedEncryptedText}</p>
         </div>
       </div>
       <div className="delete_btn">

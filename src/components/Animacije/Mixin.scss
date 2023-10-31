@@ -1,4 +1,13 @@
 @mixin center-xy {
-    text-align: center; /* Centriranje po x-osi */
+    text-align: center;
+     /* Centriranje po x-osi */
 }
   
+@mixin modal_style{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    margin: 10px 0 10px 0;
+    box-shadow: 10px 5px 5px rgb(223, 223, 223);
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+.DHistorySaveCryptoText {
+  display: flex;
+  flex-direction: column;
+}
+.DHistorySaveCryptoText .Dtitle-item {
+  margin: 10px;
+}
+.DHistorySaveCryptoText .Dtitle-item h3 {
+  font-family: "roboto mono", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 2px;
+}
+.DHistorySaveCryptoText .Dsort-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+.DHistorySaveCryptoText .Dsort-delete .Dsort {
+  flex: 1;
+  margin-right: 8px;
+}
+.DHistorySaveCryptoText .Dsort-delete .Dsort select {
+  width: 80%;
+  padding: 8px 12px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 15px;
+}
+.DHistorySaveCryptoText .Dsort-delete .Ddelete {
+  flex: 0 0 auto;
+}
+.DHistorySaveCryptoText .Dsort-delete .Ddelete button {
+  padding: 8px 12px;
+  background: #87ff37;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.DHistorySaveCryptoText .Dsort-delete .Ddelete button:hover {
+  background: #d32f2f;
+}
+.DHistorySaveCryptoText .Derror-msg {
+  display: flex;
+  position: relative;
+  top: 50px;
+  left: 10%;
+  text-align: center;
+  background-color: black;
+  border: 2px solid #87ff37;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "roboto mono", sans-serif;
+  font-weight: 400;
+  color: white;
+  max-width: 350px;
+}
+.DHistorySaveCryptoText ul {
+  flex-direction: row;
+}
+.DHistorySaveCryptoText ul li {
+  margin: 10px 0 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .DHistorySaveCryptoText {
+    width: 99%;
+  }
+  .DHistorySaveCryptoText .Dtitle-item {
+    width: 100%;
+  }
+  .DHistorySaveCryptoText .Dtitle-item h3 {
+    font-size: 16px;
+  }
+  .DHistorySaveCryptoText .Derror-msg {
+    top: 0;
+    left: 5%;
+    padding: 10px;
+  }
+  .DHistorySaveCryptoText .Dsort-delete {
+    width: 100%;
+  }
+  .DHistorySaveCryptoText .Dsort-delete .Dsort {
+    display: flex;
+  }
+  .DHistorySaveCryptoText ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .DHistorySaveCryptoText ul li {
+    width: 100%;
+    margin: 5px 0 0px 0;
+  }
+}/*# sourceMappingURL=DecryptoHistorySaveCryptoTextStyle.css.map */

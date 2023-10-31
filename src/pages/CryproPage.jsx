@@ -46,7 +46,7 @@ export default function CryproPage() {
       <main>
         <section>
           {showInputText && <InputTextComponent />}
-        {!showInputText && <InputCryptoTextComponent />}
+     {!showInputText && <InputCryptoTextComponent />}
         </section>
 
       </main>

@@ -2,13 +2,22 @@
 
 .contaktMe {
     display: flex;
-  }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    ;
+    border-radius: 25%;
+    padding: 20px;
+  
   
   .contactLeft {
-    background-color: $color-green;
     color: white;
     padding: 20px;
     text-align: center;
+    width: 40%;
   }
   
   .contactForm {
@@ -58,4 +67,4 @@
       transform: translate(-50%, -50%);
     }
   }
-  
+}

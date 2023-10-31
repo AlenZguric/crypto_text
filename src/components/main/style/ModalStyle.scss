@@ -1,50 +1,91 @@
+@import "../../colors.scss";
+@import "../../Fonts.scss";
+@import "../../Animacije/Mixin.scss";
+
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    button {
-        display: block;
-        margin: 0 auto;
-      }
-  
-    .modal-content {
-      background-color: white;
-      width: 100%;
-      max-width: 21cm;
-      padding: 1.5cm;
-      height: 100%; // Dodajte visinu za .modal-content
-  
-      @media screen and (max-width: 768px) {
-        width: calc(100% - 20px);
-        padding: 10px;
-        height: auto; // Resetirajte visinu za mobilne uređaje
-      }
-  
-      @media screen and (min-width: 769px) {
-        height: 80vh; // Postavite visinu na 80% viewport visine na desktopu
-      }
-  
-      h2 {
-        font-size: 1.5rem;
-      }
-  
-      strong {
-        color: green;
-      }
-  
-      div {
-        margin: 10px 0;
-        max-height: 60vh;
-        overflow-y: auto;
-      }
-  
-      
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .close-button {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top: 2%;
+    right: 10%;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
     }
   }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    max-width: 70%;
+    padding: 25px;
+    height: 80%;
+    overflow-y: auto;
+    display: flex;
+
+    h2 {
+      font-family: "roboto mono", sans-serif;
+      margin-bottom: 30px;
+    }
+    strong {
+      font-weight: bold;
+      color: green;
+    }
+    p {
+      line-height: 1.5em;
+      margin-top: 6px;
+    }
+    .time{
+      @include modal_style
+
+    }
+    .input_text{
+      @include modal_style;
+      display:flex;
+      flex-direction: column;
+      p{
+        word-wrap: break-word;
+      }
   
+
+    } 
+    .encrypted_text {
+      @include modal_style;
+      display:flex;
+      flex-direction: column;
+      p{
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .modal{
+    .modal-content{
+      display: flex;
+      max-width: none;
+      height: 85%;
+    p{
+      max-width: 99%;
+    }
+    .encrypted_text{
+      width: 100%;
+      p{
+        width: 98%;
+      }
+    }
+  }
+}}

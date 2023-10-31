@@ -1,7 +1,8 @@
-import React from "react";
+import React  from "react";
 import "../style/ModalStyle.css";
 
-const Modal = ({ data, onCloseModal }) => {
+const ModalDecrypto = ({ data,  onCloseModal }) => {
+
   return (
     <div className="modal">
       <span className="close-button" onClick={onCloseModal}>
@@ -15,15 +16,16 @@ const Modal = ({ data, onCloseModal }) => {
         </div>
         <div className="input_text">
           <strong>Ulazni text:</strong>
-          <p>{data.inputText}</p>
+          <p>{data.encryptedText}</p>
         </div>
         <div className="encrypted_text">
           <strong>Izlazni text:</strong>
-          <p>{data.encryptedText}</p>
+          <p>{data.decryptedText
+}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Modal;
+export default ModalDecrypto;

@@ -63,13 +63,13 @@
 }
 .input-text-component .input-text-area textarea::-moz-placeholder {
   color: black;
-  text-align: center; /* Centriranje po x-osi */
-  animation: textShake 2s infinite;
+  text-align: center;
+  /* Centriranje po x-osi */
 }
 .input-text-component .input-text-area textarea::placeholder {
   color: black;
-  text-align: center; /* Centriranje po x-osi */
-  animation: textShake 2s infinite;
+  text-align: center;
+  /* Centriranje po x-osi */
 }
 .input-text-component .input-text-area .textarea_btn {
   align-items: center;
@@ -87,7 +87,8 @@
   background-color: #87ff37;
 }
 .input-text-component .input-text-area .result-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .input-text-component .input-text-area .result-container .result-crypto {
   min-width: 500px;

@@ -3,13 +3,13 @@
 @import "../../colors.scss";
 @import "../../Animacije/Mixin.scss";
 
-.input-text-component {
+.Dinput-text-component{
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 
-  .title {
+  .Dtitle {
     display: flex;
     h3 {
       color: white;
@@ -21,13 +21,13 @@
     }
   }
 
-  .input-Cryptotext-area {
+  .Dinput-text-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
     width: 100%;
-    .error-message {
+    .Derror-message {
       position: absolute;
       top: 55%;
       border: 1px solid black;
@@ -38,7 +38,7 @@
       font-weight: 600;
     }
 
-    textarea {
+    .Dinput-textarea{
       min-width: 500px;
       min-height: 150px;
       border: 3px solid $color-white;
@@ -70,9 +70,9 @@
         background-color: $color-green;
       }
     }
-    .result-container {
+    .Dresult-container {
       position: relative;
-      .resultDecrypto {
+      .Dresult-decrypto {
         min-width: 500px;
       min-height: 150px;
       border: 3px solid $color-white;
@@ -91,24 +91,25 @@
   }}
 
   @media screen and (max-width: 768px) {
-    .input-text-component {
+    .Dinput-text-component {
       width: 100%;
-      .title {
+      .Dtitle {
         h3 {
           font-size: 14px;
         }
       }
-      .input-Cryptotext-area {
+      .Dinput-text-area {
         padding: 8px;
         width: 100%;
 
-        textarea {
+        .Dinput-textarea {
           width: 100%;
           min-width: 350px;
+          min-width: none;
         }
-        .result-container {
+        .Dresult-container {
           width: 100%;
-          .resultDecrypto {
+          .Dresult-decrypto {
             width: 100%;
             max-width: none;
             min-width: 100%;

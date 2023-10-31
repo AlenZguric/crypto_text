@@ -1,0 +1,21 @@
+@import "../../components/colors.scss";
+@import "../../components/Fonts.scss";
+
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-black;
+    height: 100vh;
+    width: 100%;
+    justify-content: center; // Centriraj po vertikali
+    align-items: center;     // Centriraj po horizontali
+  
+    
+  
+    footer {
+      margin-top: auto;
+      width: 100%;
+    }
+  }
+  

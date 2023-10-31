@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import HistorySaveTextItem from "./HistorySaveTextItem";
-import Modal from "./Modal";
+import DecryptoHistorySaveTextItem from "./DecryptoHistorySaveTextItem";
+import ModalDecrypto from "./ModalDecrypto";
 import moment from "moment";
-import "../style/HistorySaveCryptoTextStyle.css";
+import "../style/DecryptoHistorySaveCryptoTextStyle.css";
 
-const HistorySaveCryptoText = () => {
+const DecryptoHistorySaveCryptoText = ({ handleDelete: parentHandleDelete, decryptedText }) => {
   const [cryptoData, setCryptoData] = useState([]);
   const [sortOrder, setSortOrder] = useState("newestToOldest");
-  const [isModalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = (data) => {
     setModalData(data);
@@ -16,12 +16,12 @@ const HistorySaveCryptoText = () => {
   };
 
   useEffect(() => {
-    const savedCryptoData = JSON.parse(localStorage.getItem("crypto")) || [];
+    const savedCryptoData = JSON.parse(localStorage.getItem("decrypto")) || [];
     const sortedData = savedCryptoData.slice();
 
     sortedData.sort((a, b) => {
-      const dateComparison = moment(b.timestamp, "HH:mm:ss DD.MM.YYYY").diff(
-        moment(a.timestamp, "HH:mm:ss DD.MM.YYYY")
+      const dateComparison = moment(b.timestamp, "HH:mm:ss  DD.MM.YYYY").diff(
+        moment(a.timestamp, "HH:mm:ss  DD.MM.YYYY")
       );
       if (dateComparison === 0) {
         return moment(b.timestamp, "HH:mm:ss DD.MM.YYYY").diff(
@@ -40,23 +40,23 @@ const HistorySaveCryptoText = () => {
 
   const handleDelete = (id) => {
     const updatedCryptoData = cryptoData.filter((data) => data.id !== id);
-    localStorage.setItem("crypto", JSON.stringify(updatedCryptoData));
+    localStorage.setItem("decrypto", JSON.stringify(updatedCryptoData));
     setCryptoData(updatedCryptoData);
   };
 
   const handleDeleteAll = () => {
     // Izbriši sve stavke iz lokalnog skladišta
-    localStorage.removeItem("crypto");
+    localStorage.removeItem("decrypto");
     setCryptoData([]);
   };
 
   return (
-    <div className="HistorySaveCryptoText">
-      <div className="title-item">
-        <h3>Povijest šifriranih tekstova</h3>
+    <div className="DHistorySaveCryptoText">
+      <div className="Dtitle-item">
+        <h3>Povijest dešifriranih tekstova</h3>
       </div>
-      <div className="sort-delete">
-        <div className="sort">
+      <div className="Dsort-delete">
+        <div className="Dsort">
           <select
             onChange={(e) => setSortOrder(e.target.value)}
             value={sortOrder}
@@ -65,33 +65,35 @@ const HistorySaveCryptoText = () => {
             <option value="oldestToNewest">Najstarije do najnovijeg</option>
           </select>
         </div>
-        <div className="delete">
-        <button onClick={handleDeleteAll}>Izbriši sve</button>
-
+        <div className="Ddelete">
+          <button onClick={handleDeleteAll}>Izbriši sve</button>
         </div>
       </div>
 
       {cryptoData.length === 0 ? (
-        <p className="error-msg">Nema spremljenih stavki.</p>
+        <p className="Derror-msg">Nema spremljenih stavki.</p>
       ) : (
         <ul>
           {cryptoData.map((data) => (
             <li key={data.id}>
-              <HistorySaveTextItem
-                key={data.id}
+              <DecryptoHistorySaveTextItem
                 data={data}
                 onDelete={handleDelete}
-                onOpenModal={() => openModal(data)}
+                onOpenDecrypto={openModal}
               />
             </li>
           ))}
         </ul>
       )}
-      {isModalOpen && (
-        <Modal data={modalData} onCloseModal={() => setModalOpen(false)} />
+      {modalOpen && (
+        <ModalDecrypto
+          data={modalData}
+          decryptedText={decryptedText}
+          onCloseModal={() => setModalOpen(false)}
+        />
       )}
     </div>
   );
 };
 
-export default HistorySaveCryptoText;
+export default DecryptoHistorySaveCryptoText;

@@ -1,32 +1,38 @@
 .contaktMe {
   display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  border-radius: 25%;
+  padding: 20px;
 }
-
-.contactLeft {
-  background-color: #87ff37;
+.contaktMe .contactLeft {
   color: white;
   padding: 20px;
   text-align: center;
+  width: 40%;
 }
-
-.contactForm {
+.contaktMe .contactForm {
   flex: 1;
   padding: 20px;
 }
-.contactForm form label {
+.contaktMe .contactForm form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-.contactForm form input,
-.contactForm form textarea {
+.contaktMe .contactForm form input,
+.contaktMe .contactForm form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.contactForm form input[type=submit] {
+.contaktMe .contactForm form input[type=submit] {
   background-color: green;
   color: white;
   padding: 10px 20px;
@@ -35,10 +41,10 @@
   cursor: pointer;
   font-weight: bold;
 }
-.contactForm form input[type=submit]:hover {
+.contaktMe .contactForm form input[type=submit]:hover {
   background-color: darkgreen;
 }
-.contactForm .notificationForm {
+.contaktMe .contactForm .notificationForm {
   background-color: green;
   color: white;
   padding: 10px;

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+.history-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #87ff37;
+  border-radius: 12px;
+  margin: 15px 0px 15px 0px;
+  padding: 6px;
+  background-color: black;
+}
+.history-item .title_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  min-height: 100px;
+}
+.history-item .title_item .time p {
+  font-family: "Arial";
+  color: green;
+  font-weight: 700;
+  font-size: 14px;
+}
+.history-item .title_item .input {
+  padding: 6px;
+  width: 95%;
+}
+.history-item .title_item .input p {
+  color: white;
+  margin-top: 5px;
+  word-break: break-all;
+}
+.history-item .title_item .encrypt {
+  padding: 6px;
+  width: 95%;
+}
+.history-item .title_item .encrypt p {
+  color: white;
+  margin-top: 5px;
+  word-break: break-all;
+}
+.history-item .delete_btn {
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.history-item .delete_btn button {
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: #87ff37;
+  color: black;
+  justify-content: center;
+}
+.history-item .delete_btn button:hover {
+  background-color: red;
+}
+
+@media screen and (max-eidth: 768px) {
+  .history-item {
+    max-width: 100%;
+  }
+  .history-item .title_item {
+    display: flex;
+    max-width: none;
+    align-items: stretch;
+  }
+  .history-item .title_item .encrypt {
+    width: 100%;
+  }
+  .history-item .title_item .encrypt p {
+    word-break: break-all;
+  }
+}/*# sourceMappingURL=HistorySaveTextItemStyle.css.map */

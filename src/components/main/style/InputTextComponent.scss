@@ -51,7 +51,7 @@
       &::placeholder {
         color: black;
         @include center-xy;
-        animation: textShake 2s infinite;
+       // animation:  $textShake 2s infinite;
       }
     }
     .textarea_btn {
@@ -70,7 +70,8 @@
       }
     }
     .result-container {
-      position: relative;
+      display: flex;
+      flex-direction: column;
       .result-crypto {
         min-width: 500px;
         min-height: 150px;

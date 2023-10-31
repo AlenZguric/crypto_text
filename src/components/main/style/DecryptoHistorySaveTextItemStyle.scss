@@ -1,0 +1,78 @@
+@import "../../colors.scss";
+@import "../../Fonts.scss";
+
+.Dhistory-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $color-green;
+    border-radius: 12px;
+    margin: 15px 0px 15px 0px;
+    padding: 6px;
+    background-color: black;
+    .Dtitle_item{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        min-height: 100px;
+
+        .Dtime {
+            p{
+            font-family: 'Arial';
+            color: green;
+            font-weight: 700;
+            font-size: 14px;}
+            
+        }
+        .Dinput{
+            padding: 6px;
+            width: 95%;
+            p{
+            color: white;
+            margin-top: 5px;
+            word-break: break-all;
+        }}
+        .Dencrypt{
+            padding: 6px;
+            width: 95%;
+
+            p{
+            color: white;
+            margin-top: 5px;
+            word-break: break-all;
+        }}
+
+    }
+    .Ddelete_btn{
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        button{
+            font-size: 20px;
+            border-radius: 6px;
+            background-color: $color-green;
+            color: black;
+            justify-content: center;
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .Dhistory-item{
+        max-width: 100%;
+        .Dtitle_item{
+            display: flex;
+            max-width: none;
+            align-items: stretch;
+            .Dencrypt{
+            width: 100%;
+            p{
+                word-break: break-all;
+            }
+           }
+        }
+    }
+}
