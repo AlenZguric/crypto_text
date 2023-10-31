@@ -33,11 +33,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="contaktMe">
+    <div className="contactMe">
       <div className="contactLeft">
         <div className="contactTitle">
-        <h3>Kontaktiraj me...</h3>
+          <h3>Kontaktiraj me...</h3>
 
+          <p>Ako imaš pohvale, kritike, pitanja...</p>
+          <p>pošalji e-mail</p>
+          <a href="mailto:zguric.alen@hotmail.com">zguric.alen@hotmail.com</a>
+          <p>ili</p>
+          <p>ispuni obrazac</p>
         </div>
       </div>
       <div className="contactForm">
@@ -47,7 +52,7 @@ export default function ContactForm() {
           <label>E-mail:</label>
           <input type="email" name="user_email" required />
           <label>Tvoja Poruka!!</label>
-          <textarea name="message" required rows={8}/>
+          <textarea name="message" required rows={8} />
           <input type="submit" value="Pošalji" />
         </form>
       </div>

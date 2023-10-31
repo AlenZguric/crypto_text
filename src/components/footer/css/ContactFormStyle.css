@@ -1,5 +1,7 @@
-.contaktMe {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+.contactMe {
   display: flex;
+  flex-direction: row;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -9,49 +11,154 @@
   border-radius: 25%;
   padding: 20px;
 }
-.contaktMe .contactLeft {
+.contactMe .notificationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.892);
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #87ff37;
+  border-radius: 12px;
+}
+.contactMe .notificationForm .notificationForm p,
+.contactMe .notificationForm .notificationForm span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "roboto mono", sans-serif;
+  color: black;
+  margin: 0;
+}
+.contactMe .contactLeft {
   color: white;
   padding: 20px;
   text-align: center;
-  width: 40%;
+  min-width: 40%;
 }
-.contaktMe .contactForm {
-  flex: 1;
+.contactMe .contactLeft .contactTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.contactMe .contactLeft .contactTitle h3 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  padding-bottom: 6rem;
+  font-family: "roboto mono", sans-serif;
+  text-transform: capitalize;
+}
+.contactMe .contactLeft .contactTitle p {
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "roboto mono", sans-serif;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.contactMe .contactLeft .contactTitle a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-family: "roboto", sans-serif;
   padding: 20px;
+  text-shadow: rgba(157, 199, 202, 0.7411764706) 1px 1px;
 }
-.contaktMe .contactForm form label {
+.contactMe .contactLeft .contactTitle a:hover {
+  letter-spacing: normal;
+  text-shadow: none;
+}
+.contactMe .contactForm {
+  padding: 20px;
+  min-width: 500px;
+}
+.contactMe .contactForm form label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
 }
-.contaktMe .contactForm form input,
-.contaktMe .contactForm form textarea {
+.contactMe .contactForm form input,
+.contactMe .contactForm form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.contaktMe .contactForm form input[type=submit] {
-  background-color: green;
-  color: white;
+.contactMe .contactForm form input[type=submit] {
+  background-color: #87ff37;
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
 }
-.contaktMe .contactForm form input[type=submit]:hover {
+.contactMe .contactForm form input[type=submit]:hover {
   background-color: darkgreen;
 }
-.contaktMe .contactForm .notificationForm {
-  background-color: green;
-  color: white;
-  padding: 10px;
-  position: fixed;
-  border: 2px solid white;
-  border-radius: 20px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+@media screen and (max-width: 768px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+    position: relative;
+  }
+  .contactMe .contactLeft {
+    padding: 10px;
+    justify-content: flex-start;
+    min-width: none;
+  }
+  .contactMe .contactLeft .contactTitle {
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+  .contactMe .contactLeft .contactTitle h3 {
+    font-size: 25px;
+    padding-bottom: 3rem;
+  }
+  .contactMe .contactForm {
+    min-width: 350px;
+    width: 100%;
+  }
+  .contactMe .notificationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.892);
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #87ff37;
+    border-radius: 12px;
+  }
+  .contactMe .notificationForm .notificationForm p,
+  .contactMe .notificationForm .notificationForm span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "roboto mono", sans-serif;
+    color: black;
+    margin: 0;
+  }
 }/*# sourceMappingURL=ContactFormStyle.css.map */

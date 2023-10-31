@@ -1,21 +1,25 @@
 @import "../../components/colors.scss";
 @import "../../components/Fonts.scss";
 
-
 .contact-page {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-black;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-black;
+  height: 95vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  footer {
+    margin-top: auto;
     width: 100%;
-    justify-content: center; // Centriraj po vertikali
-    align-items: center;     // Centriraj po horizontali
-  
-    
-  
-    footer {
-      margin-top: auto;
-      width: 100%;
-    }
   }
+}
+@media screen and (max-width:768px) {
+ .contact-page{
+  height: 130vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+ }
   
+}

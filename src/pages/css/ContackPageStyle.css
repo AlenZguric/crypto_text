@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   background-color: hsla(0, 0%, 0%, 0.898);
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -11,4 +11,12 @@
 .contact-page footer {
   margin-top: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-page {
+    height: 130vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=ContackPageStyle.css.map */

@@ -1,36 +1,100 @@
 @import "../../colors.scss";
+@import "../../Fonts.scss";
 
-.contaktMe {
+.contactMe {
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  border-radius: 25%;
+  padding: 20px;
+  .notificationForm {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.892);
+    padding: 15px;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 500px;
-    position: absolute;
-    ;
-    border-radius: 25%;
-    padding: 20px;
-  
-  
+    border: 2px solid $color-green;
+    border-radius: 12px;
+
+    .notificationForm p,
+    .notificationForm span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px;
+      font-family: "roboto mono", sans-serif;
+      color: black;
+      margin: 0;
+    }
+  }
+
   .contactLeft {
     color: white;
     padding: 20px;
     text-align: center;
-    width: 40%;
+    min-width: 40%;
+    .contactTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      h3 {
+        font-size: 30px;
+        letter-spacing: 4px;
+        padding-bottom: 6rem;
+        font-family: "roboto mono", sans-serif;
+        text-transform: capitalize;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 200;
+        font-family: "roboto mono", sans-serif;
+        padding: 10px;
+        text-transform: capitalize;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-family: "roboto", sans-serif;
+        padding: 20px;
+        text-shadow: $color-secondary 1px 1px;
+        &:hover {
+          letter-spacing: normal;
+          text-shadow: none;
+        }
+      }
+    }
   }
-  
+
   .contactForm {
-    flex: 1;
     padding: 20px;
-  
+    min-width: 500px;
+
     form {
       label {
         display: block;
         margin-bottom: 5px;
-        font-weight: bold;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 16px;
       }
-  
+
       input,
       textarea {
         width: 100%;
@@ -39,32 +103,75 @@
         border: 1px solid #ccc;
         border-radius: 4px;
       }
-  
+
       input[type="submit"] {
-        background-color: green;
-        color: white;
+        background-color: $color-green;
+        color: black;
         padding: 10px 20px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
         font-weight: bold;
       }
-  
+
       input[type="submit"]:hover {
         background-color: darkgreen;
       }
     }
-  
-    .notificationForm {
-      background-color: green;
-      color: white;
+
+   
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+    position: relative;
+    .contactLeft {
       padding: 10px;
-      position: fixed;
-      border: 2px solid white;
-      border-radius: 20px;
+      justify-content: flex-start;
+      min-width: none;
+      .contactTitle {
+        justify-content: flex-start;
+        margin-right: 0;
+        h3 {
+          font-size: 25px;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+    .contactForm {
+      min-width: 350px;
+      width: 100%;
+    }
+    .notificationForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.892);
+      padding: 15px;
+      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      border: 2px solid $color-green;
+      border-radius: 12px;
+
+      .notificationForm p,
+      .notificationForm span {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "roboto mono", sans-serif;
+        color: black;
+        margin: 0;
+      }
     }
   }
 }
