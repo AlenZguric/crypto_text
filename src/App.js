@@ -8,6 +8,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import CryptoPage from "./pages/CryproPage";
 import CookiePage from "./pages/CookiePage";
 import HistoryPage from "./pages/HistoryPage";
+import PrivacyAndTerm from "./pages/PrivacyAndTerm";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/cookie" element={<CookiePage />} />
         <Route path="/history" element={<HistoryPage />} />
+        <Route path="/privacy" element={<PrivacyAndTerm />} />
+
       </Routes>
     </div>
   );

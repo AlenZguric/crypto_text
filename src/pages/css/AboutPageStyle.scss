@@ -1,0 +1,15 @@
+@import"../../components/colors.scss";
+@import "../../components/Fonts.scss";
+
+.About-page{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-black;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    footer {
+        margin-top: auto;
+        width: 100%;
+      }
+}
