@@ -26,7 +26,7 @@ function CopyrightYear() {
     <div className="copyright">
       <Link to="/privacy">Uvjeti Korištenja </Link>
 
-      <Link to="/about">
+      <Link to="/privacy">
         <p className="copyright-link">{copyrightText}</p>
       </Link>
       <Link to="/privacy"> Politika Privatnosti</Link>

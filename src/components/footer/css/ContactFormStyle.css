@@ -137,6 +137,9 @@
     min-width: 350px;
     width: 100%;
   }
+  .contactMe .contactForm form label {
+    font-size: 14px;
+  }
   .contactMe .notificationForm {
     display: flex;
     flex-direction: column;

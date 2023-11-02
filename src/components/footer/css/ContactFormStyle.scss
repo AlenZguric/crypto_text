@@ -118,8 +118,6 @@
         background-color: darkgreen;
       }
     }
-
-   
   }
 }
 @media screen and (max-width: 768px) {
@@ -147,6 +145,11 @@
     .contactForm {
       min-width: 350px;
       width: 100%;
+      form {
+        label {
+          font-size: 14px;
+        }
+      }
     }
     .notificationForm {
       display: flex;

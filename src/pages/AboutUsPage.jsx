@@ -69,10 +69,8 @@ const AboutUsPage = () => {
                     Naša aplikacija vam omogućava brzo šifriranje i dešifriranje
                     poruka kako biste mogli komunicirati bez problema
                     <a
-                      href="https://www.youtube.com/watch?v=WY0HtLcQOxc"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ textDecoration: "none" }}
+                      href="#video-section"
+                      style={{ textDecoration: "none"}}
                     >
                       {" "}
                       (Za upute pogledaj video)
@@ -99,7 +97,7 @@ const AboutUsPage = () => {
                 </li>
               </ul>
             </article>
-            <div className="video">
+            <div className="video" id="video-section">
               <div className="title">
                 <h2>Video Uputstva</h2>
                 <p>kako koristi Crypto text web aplikaciju</p>

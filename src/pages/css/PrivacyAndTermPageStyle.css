@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
+.privacy-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, 0.898);
+}
+.privacy-page .privacy-and-terms {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 4px solid #87ff37;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  margin: 60px 0 60px 0;
+  color: aliceblue;
+}
+.privacy-page .privacy-and-terms .title {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.privacy-page .privacy-and-terms .title header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.privacy-page .privacy-and-terms .title header p {
+  font-size: 16px;
+  font-family: "roboto mono", sans-serif;
+  text-align: center;
+  line-height: 2.5;
+}
+.privacy-page .privacy-and-terms .title header hr {
+  width: 50%;
+  height: 5px;
+  background-color: #87ff37;
+  margin: 30px 0 30px 0;
+}
+.privacy-page .privacy-and-terms .title .section-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.privacy-page .privacy-and-terms main {
+  display: flex;
+  flex-direction: column;
+}
+.privacy-page .privacy-and-terms main section {
+  display: flex;
+  flex-direction: column;
+}
+.privacy-page .privacy-and-terms main section article {
+  display: flex;
+  flex-direction: column;
+}
+.privacy-page .privacy-and-terms main section article h4 {
+  display: flex;
+  margin: 10px 0 0 25px;
+  font-family: "roboto mono", sans-serif;
+  font-weight: 600;
+}
+.privacy-page .privacy-and-terms main section article h2 {
+  margin-left: 30px;
+  font-family: "roboto mono";
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: #87ff37;
+}
+.privacy-page .privacy-and-terms main section article ol {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 25px 40px;
+}
+.privacy-page .privacy-and-terms main section article ol .sub-section {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+.privacy-page .privacy-and-terms main section article ol .sub-section p,
+.privacy-page .privacy-and-terms main section article ol .sub-section strong {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.privacy-page .privacy-and-terms main section article ol .sub-section ul {
+  display: flex;
+  flex-direction: column;
+}
+.privacy-page .privacy-and-terms main section article ol .sub-section ul li {
+  margin: 0 0 10px 50px;
+  font-size: 16px;
+}
+.privacy-page footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .privacy-page .privacy-and-terms {
+    width: 95%;
+  }
+  .privacy-page .privacy-and-terms .title {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  }
+  .privacy-page .privacy-and-terms .title header {
+    height: auto;
+  }
+  .privacy-page .privacy-and-terms .title header p {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .privacy-page .privacy-and-terms .title header hr {
+    width: 70%;
+    margin: 20px 0;
+  }
+  .privacy-page .privacy-and-terms main {
+    display: flex;
+    flex-direction: column;
+  }
+  .privacy-page .privacy-and-terms main section article h2.section-title {
+    margin-left: 6px;
+  }
+  .privacy-page .privacy-and-terms main section article ol {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 25px 20px;
+  }
+  .privacy-page .privacy-and-terms main section article ol li.sub-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+  }
+  .privacy-page .privacy-and-terms main section article ol li.sub-section p strong {
+    font-size: 16px;
+  }
+  .privacy-page .privacy-and-terms main section article ol li.sub-section ul li {
+    margin: 0 0 20px 20px;
+  }
+  .privacy-page .privacy-and-terms main section article h4 {
+    font-size: 14px;
+    margin: 10px;
+  }
+}/*# sourceMappingURL=PrivacyAndTermPageStyle.css.map */
