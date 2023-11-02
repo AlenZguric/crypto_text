@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,900;1,100&family=Tilt+Prism&display=swap");
 .About-page {
   display: flex;
@@ -7,7 +8,196 @@
   min-height: 100vh;
   color: white;
 }
+.About-page .about-title {
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  left: 10%;
+  transform: translate(-10% -10%);
+}
+.About-page .about-title h3 {
+  font-size: 26px;
+  font-family: "roboto mono", sans-serif;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+.About-page .about-title h3 span {
+  color: #87ff37;
+}
+.About-page .about-title p {
+  padding: 10px;
+  line-height: 1.5em;
+  font-family: "roboto mono", sans-serif;
+  font-size: 18px;
+  padding: 25px;
+}
+.About-page .about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+.About-page .about-main main .about-section {
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.About-page .about-main main .about-section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.About-page .about-main main .about-section article h4 {
+  font-size: 36px;
+  font-family: "roboto mono", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+.About-page .about-main main .about-section article ul {
+  background-color: black;
+  padding: 60px;
+  border: 4px solid #87ff37;
+  border-radius: 20px;
+}
+.About-page .about-main main .about-section article ul li::marker {
+  color: #87ff37;
+  content: "✓";
+  font-size: 24px;
+}
+.About-page .about-main main .about-section article ul li {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(157, 199, 202, 0.7411764706);
+  border-radius: 20px;
+  border-left: 0;
+}
+.About-page .about-main main .about-section article ul li p:first-child {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "roboto mono", sans-serif;
+}
+.About-page .about-main main .about-section article ul li p:nth-child(2) {
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.About-page .about-main main .about-section .video {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+}
+.About-page .about-main main .about-section .video .title {
+  padding: 16px;
+}
+.About-page .about-main main .about-section .video .title h2 {
+  text-transform: uppercase;
+  font-family: "roboto mono", sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 200;
+}
+.About-page .about-main main .about-section .video .title p {
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.About-page .about-main main .about-section .video .youtube-video {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
+}
+.About-page .about-main main .about-section .video .youtube-video .howToUse iframe {
+  width: 600px;
+  height: 350px;
+}
+.About-page .about-main main .policy {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.About-page .about-main main .policy hr {
+  height: 6px;
+  background-color: #87ff37;
+  margin-bottom: 20px;
+}
+.About-page .about-main main .policy h4 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.About-page .about-main main .policy article {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.About-page .about-main main .policy article ul li {
+  padding-top: 25px;
+}
+.About-page .about-main main .policy article ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+.About-page .about-main main .policy article ul li a:hover {
+  color: #87ff37;
+  text-decoration: underline;
+}
 .About-page footer {
   margin-top: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .About-page .about-main main .about-section article {
+    padding: 10px;
+  }
+  .About-page .about-main main .about-section article h4 {
+    font-size: 26px;
+  }
+  .About-page .about-main main .about-section article ul {
+    width: 100%;
+    padding: 10px;
+  }
+  .About-page .about-main main .about-section article ul li {
+    margin-left: 20px;
+  }
+  .About-page .about-main main .about-section .video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .About-page .about-main main .about-section .video .title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .About-page .about-main main .about-section .video .title p {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .About-page .about-main main .about-section .video .youtube-video {
+    padding: 40px 0 40px 0;
+  }
+  .About-page .about-main main .about-section .video .youtube-video .howToUse iframe {
+    width: 350px;
+    height: 190px;
+  }
+  .About-page .about-main hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
 }/*# sourceMappingURL=AboutPageStyle.css.map */

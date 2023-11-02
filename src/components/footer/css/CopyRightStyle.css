@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 60px;
   background-color: rgba(157, 199, 202, 0.7411764706);
   font-size: 14px;
@@ -11,8 +11,20 @@
 .copyright a {
   color: #000000;
   text-decoration: none;
+  margin: 0 10px 0 10px;
 }
 .copyright a:hover {
   color: #87ff37;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .copyright {
+    justify-content: space-evenly;
+  }
+  .copyright a {
+    margin: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=CopyRightStyle.css.map */

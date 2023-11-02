@@ -6,21 +6,21 @@ import TypeText from "../components/main/js/TypeText";
 import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
-    const HowToUse = () => {
-        return (
-          <div className="howToUse">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/WY0HtLcQOxc"
-              title="How To Use Crypto Text App"
-              frameBorder="20"
-              allowFullScreen
-            ></iframe>
-          </div>
-        );
-      };
-      
+  const HowToUse = () => {
+    return (
+      <div className="howToUse">
+        <iframe
+          width="400"
+          height="195"
+          src="https://www.youtube.com/embed/WY0HtLcQOxc"
+          title="How To Use Crypto Text App"
+          frameBorder="20"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,22 +28,22 @@ const AboutUsPage = () => {
     <div className="About-page">
       <PopUp />
       <div className="about-title">
-        <header>
-          <h3>
-            O Crypt<span>O</span>
-          </h3>
+        <h3>
+          O Crypt<span>O</span>
+        </h3>
 
-          <TypeText
-            text="Dobrodošli u aplikaciju za šifriranje i dešifriranje poruka! Sigurnost i privatnost vaše komunikacije su nam na prvom mjestu."
-            delay={30}
-            initialDelay={1500}
-            element="p"
-          />
-        </header>
+        <TypeText
+          text="Dobrodošli u aplikaciju za šifriranje
+             i dešifriranje poruka! Sigurnost i
+              privatnost vaše komunikacije su nam na prvom mjestu"
+          delay={30}
+          initialDelay={1500}
+          element="p"
+        />
       </div>
       <div className="about-main">
         <main>
-          <section>
+          <section className="about-section">
             <article>
               <h4>Ključne značajke</h4>
               <ul>
@@ -68,7 +68,15 @@ const AboutUsPage = () => {
                   <p>
                     Naša aplikacija vam omogućava brzo šifriranje i dešifriranje
                     poruka kako biste mogli komunicirati bez problema
-                    <a href="https://www.youtube.com/watch?v=WY0HtLcQOxc" target="_blank" rel="noopener noreferrer">Za upute pogledaj video</a>
+                    <a
+                      href="https://www.youtube.com/watch?v=WY0HtLcQOxc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {" "}
+                      (Za upute pogledaj video)
+                    </a>
                   </p>
                 </li>
                 <li>
@@ -87,20 +95,22 @@ const AboutUsPage = () => {
                 </li>
                 <li>
                   <p>Responzivan dizajn</p>
-                  <p>
-                    Aplikacija je dostupna za mobilne uređaje i
-                    desktope.
-                  </p>
+                  <p>Aplikacija je dostupna za mobilne uređaje i desktope.</p>
                 </li>
               </ul>
-              
             </article>
             <div className="video">
-  <HowToUse />
-</div>
-
+              <div className="title">
+                <h2>Video Uputstva</h2>
+                <p>kako koristi Crypto text web aplikaciju</p>
+              </div>
+              <div className="youtube-video">
+                <HowToUse />
+              </div>
+            </div>
           </section>
-          <section>
+          <section className="policy">
+            <hr />
             <h4>Politika Privatnost i Uvjeti Korištenja</h4>
 
             <article>
