@@ -1,5 +1,7 @@
 import React from "react";
 import "../style/ModalStyle.css";
+import { translate } from "../../../translation/Translate";
+
 
 const Modal = ({ data, onCloseModal }) => {
   return (
@@ -8,17 +10,17 @@ const Modal = ({ data, onCloseModal }) => {
         &times;
       </span>
       <div className="modal-content">
-        <h2>Detalji šifriranog teksta</h2>
+        <h2>{translate("modal", "h2")}</h2>
         <div className="time">
-          <strong>Vrijeme:</strong>
+          <strong>{translate("modal", "time")}</strong>
           <p>{data.timestamp}</p>
         </div>
         <div className="input_text">
-          <strong>Ulazni text:</strong>
+          <strong>{translate("modal", "input")}</strong>
           <p>{data.inputText}</p>
         </div>
         <div className="encrypted_text">
-          <strong>Izlazni text:</strong>
+          <strong>{translate("modal", "output")}</strong>
           <p>{data.encryptedText}</p>
         </div>
       </div>

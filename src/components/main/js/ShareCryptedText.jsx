@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { shareOnMobile } from 'react-mobile-share';
 import "../style/ShareCryptedTextStyle.css";
+import { translate } from "../../../translation/Translate";
+
 
 const ShareCryptedText = ({ encryptedText }) => {
 
@@ -22,7 +24,7 @@ const handleShare = () => {
   if (navigator.share) {
     navigator
       .share({
-        title: 'Šifrirani tekst',
+        title: (translate("ShareCryptedText", "title")) ,
         text: encryptedText,
       })
       .then(() => console.log('Tekst je uspješno podjeljen'))
@@ -58,7 +60,7 @@ return (
         content_copy
       </i>
     </button>
-    {showNotification && <p>Tekst je uspješno kopiran!</p>}
+    {showNotification && <p>{translate("ShareCryptedText", "showNotification")}</p>}
   </div>
 );
 };

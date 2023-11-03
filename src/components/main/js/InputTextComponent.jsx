@@ -3,6 +3,8 @@ import ShareCryptedText from "./ShareCryptedText";
 import symbolMap from "./symbolLib";
 import "../../main/style/InputTextComponent.css";
 import moment from "moment";
+import { translate } from "../../../translation/Translate";
+
 
 const InputTextComponent = () => {
   const [inputText, setInputText] = useState("");
@@ -18,7 +20,7 @@ const InputTextComponent = () => {
 
   const handleEncrypt = () => {
     if (!inputText) {
-      setErrorMessage("* Unesite text *");
+      setErrorMessage((translate("InputTextComponent", "seterror-msg")));
       return;
     }
 
@@ -79,11 +81,11 @@ const InputTextComponent = () => {
   return (
     <div className="input-text-component">
       <div className="title">
-        <h3>Šifriraj text...</h3>
+        <h3>{translate("InputTextComponent", "h3")}</h3>
       </div>
       <div className="input-text-area">
         <textarea
-          placeholder="Unesite tekst ovdje..."
+          placeholder={translate("InputTextComponent", "placeholder")}
           value={inputText}
           onChange={handleInputChange}
           className="input-textarea"
@@ -91,7 +93,7 @@ const InputTextComponent = () => {
         {errorMessage && <p className="error-message ">{errorMessage}</p>}
         <div className="textarea_btn">
           <button onClick={handleEncrypt} className="encrypt-button">
-            Šifriraj
+            {translate("InputTextComponent", "encrypt-btn")}
           </button>
         </div>
         {showResult && (

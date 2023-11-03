@@ -4,6 +4,8 @@ import CopyRight from "../components/footer/js/CopyRight";
 import "../pages/css/AboutPageStyle.css";
 import TypeText from "../components/main/js/TypeText";
 import { Link } from "react-router-dom";
+import { translate } from "../../../translation/Translate";
+
 
 const AboutUsPage = () => {
   const HowToUse = () => {

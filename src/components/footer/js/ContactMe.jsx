@@ -1,4 +1,6 @@
 import React from 'react';
+import { translate } from "../../../translation/Translate";
+
 import {
   EmailShareButton,
   LinkedinShareButton,
@@ -12,13 +14,13 @@ const ContactMe = () => {
   const linkedinUrl = "https://www.linkedin.com/in/alen-zguri%C4%87?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTCsmIAcrSVasigaIBOH6%2FA%3D%3D"
     return (
     <div className="contact-me">
-      <h2>Kontaktiraj me...</h2>
+      <h2>{translate("contactme", "h2")}</h2>
       <div className="block-contact-info">
         <div className="contact-info">
             <EmailShareButton url={`mailto:${email}`}>
             <EmailIcon size={32} round />
             </EmailShareButton>
-            <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
+            <p>E-mail: <a href={`mailto:${email}`}>{email}</a></p>
         </div>
         <div className="contact-info">
             <LinkedinShareButton url={linkedinUrl}>
@@ -26,7 +28,7 @@ const ContactMe = () => {
             </LinkedinShareButton>
             <p>
             LinkedIn: <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
-                Moj LinkedIn profil
+                {translate("contactme", "p1")}
             </a>
             </p>
         </div>

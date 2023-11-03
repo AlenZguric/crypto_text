@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import CryptoPage from "./pages/CryproPage";
-import CookiePage from "./pages/CookiePage";
 import HistoryPage from "./pages/HistoryPage";
 import PrivacyAndTerm from "./pages/PrivacyAndTerm";
 
@@ -21,7 +20,6 @@ function App() {
         <Route path="/crypto" element={<CryptoPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/cookie" element={<CookiePage />} />
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/privacy" element={<PrivacyAndTerm />} />
 

@@ -3,6 +3,7 @@ import HistorySaveTextItem from "./HistorySaveTextItem";
 import Modal from "./Modal";
 import moment from "moment";
 import "../style/HistorySaveCryptoTextStyle.css";
+import { translate } from "../../../translation/Translate";
 
 const HistorySaveCryptoText = () => {
   const [cryptoData, setCryptoData] = useState([]);
@@ -53,7 +54,7 @@ const HistorySaveCryptoText = () => {
   return (
     <div className="HistorySaveCryptoText">
       <div className="title-item">
-        <h3>Povijest šifriranih tekstova</h3>
+        <h3>{translate("HistorySaveCryptoText", "h3")}</h3>
       </div>
       <div className="sort-delete">
         <div className="sort">
@@ -61,18 +62,25 @@ const HistorySaveCryptoText = () => {
             onChange={(e) => setSortOrder(e.target.value)}
             value={sortOrder}
           >
-            <option value="newestToOldest">Najnovije do najstarijeg</option>
-            <option value="oldestToNewest">Najstarije do najnovijeg</option>
+            <option value="newestToOldest">
+              {translate("HistorySaveCryptoText", "option1")}
+            </option>
+            <option value="oldestToNewest">
+              {translate("HistorySaveCryptoText", "option2")}
+            </option>
           </select>
         </div>
         <div className="delete">
-        <button onClick={handleDeleteAll}>Izbriši sve</button>
-
+          <button onClick={handleDeleteAll}>
+            {translate("HistorySaveCryptoText", "delete-btn")}
+          </button>
         </div>
       </div>
 
       {cryptoData.length === 0 ? (
-        <p className="error-msg">Nema spremljenih stavki.</p>
+        <p className="error-msg">
+          {translate("HistorySaveCryptoText", "error-msg")}
+        </p>
       ) : (
         <ul>
           {cryptoData.map((data) => (

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import symbolMap from "./symbolLib";
 import "../../main/style/InputCryptoTextComponentStyle.css";
 import moment from "moment";
+import { translate } from "../../../translation/Translate";
 
-const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
+const InputCryptoTextComponent = () => {
+  // Promijenjeno ime komponente
   const [encryptedText, setEncryptedText] = useState(""); // Promijenjeno ime stanja
   const [decryptedText, setDecryptedText] = useState(""); // Dodano stanje za dešifrirani tekst
   const [showResult, setShowResult] = useState(false);
@@ -15,9 +17,10 @@ const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
     setErrorMessage("");
   };
 
-  const handleDecrypt = () => { // Promijenjena funkcija za dešifriranje
+  const handleDecrypt = () => {
+    // Promijenjena funkcija za dešifriranje
     if (!encryptedText) {
-      setErrorMessage("* Unesite šifrirani text *");
+      setErrorMessage(translate("InputCryptoTextComponent", "seterror-msg"));
       return;
     }
 
@@ -36,20 +39,23 @@ const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
     setErrorMessage("");
   };
 
-  useEffect(() => { // Promijenjeno ime ključa za lokalno spremanje
+  useEffect(() => {
+    // Promijenjeno ime ključa za lokalno spremanje
     const saveDataToLocalStorage = () => {
-      if (showResult && encryptedText && decryptedText) { // Promijenjeno na "decryptedText"
+      if (showResult && encryptedText && decryptedText) {
+        // Promijenjeno na "decryptedText"
         try {
           const id = moment().format("HHmmssDDMMYYYY");
           const item = {
             id,
-            encryptedText, // Promijenjeno na "encryptedText"
-            decryptedText, // Dodano "decryptedText"
+            encryptedText,
+            decryptedText,
             timestamp: moment().format("HH:mm:ss DD.MM.YYYY"),
           };
 
           // Dohvatite postojeće podatke pod ključem "decrypto" // Promijenjeno ime ključa
-          const existingData = JSON.parse(localStorage.getItem("decrypto")) || [];
+          const existingData =
+            JSON.parse(localStorage.getItem("decrypto")) || [];
 
           // Pronađi indeks već postojećeg objekta s istim tekstom za dešifriranje
           const existingItemIndex = existingData.findIndex(
@@ -82,12 +88,11 @@ const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
   return (
     <div className="Dinput-text-component">
       <div className="Dtitle">
-        <h3>Dešifriraj text...</h3> 
-        
+        <h3>{translate("InputCryptoTextComponent", "h3")}</h3>
       </div>
       <div className="Dinput-text-area">
         <textarea
-          placeholder="Unesite šifrirani tekst ovdje..."
+          placeholder={translate("InputCryptoTextComponent", "placeholder")}
           value={encryptedText}
           onChange={handleInputChange}
           className="Dinput-textarea"
@@ -95,12 +100,12 @@ const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
         {errorMessage && <p className="Derror-message ">{errorMessage}</p>}
         <div className="textarea_btn">
           <button onClick={handleDecrypt} className="encrypt-button">
-            Dešifriraj
+            {translate("InputCryptoTextComponent", "decrypt-btn")}
           </button>
         </div>
         {showResult && (
           <div className="Dresult-container">
-            <p className="Dresult-decrypto">{decryptedText}</p> 
+            <p className="Dresult-decrypto">{decryptedText}</p>
           </div>
         )}
       </div>
@@ -108,4 +113,4 @@ const InputCryptoTextComponent = () => { // Promijenjeno ime komponente
   );
 };
 
-export default InputCryptoTextComponent; 
+export default InputCryptoTextComponent;

@@ -1,17 +1,228 @@
 {
-    "en":{
-        "title": "ovo je na engleskom",
-        "proba": "kaok si proba",
-        "link_home": "Home",
-        "link_share": "Share"
-
+    "navbar": {
+        "en": {
+            "link_home": "Home",
+            "link_crypto": "Encrypt",
+            "link_contact": "Contact",
+            "link_about": "About"
+        },
+        "hr": {
+            "link_home": "Početna",
+            "link_crypto": "Šifriraj",
+            "link_contact": "Kontakt",
+            "link_about": "O App"
+        }
     },
-    "hr":{
-        "title": "ovo je na hrvatskom",
-        "proba": "kaok si proba hrvatski",
-        "link_home": "Početna",
-        "link_share": "Dijeli"
+    "contactform": {
+        "en": {
+            "notificationForm": "Request has been successfully sent!",
+            "notificationForm1": "Expect a response by email.",
+            "contactTitle": "Contact me...",
+            "p1": "If you have compliments, critiques, questions...",
+            "p2": "send e-mail",
+            "p3": "Or",
+            "p4": "Fill out the form.",
+            "label_name": "Your Name",
+            "label_email": "E-mail",
+            "label_msg": "Enter Message",
+            "send_btn": "Send Message"
+        },
+        "hr": {
+            "notificationForm": "Upit je uspješno poslan!",
+            "notificationForm1": "Očekuj odgovor na email.",
+            "contactTitle": "Kontaktiraj me...",
+            "p1": "Ako imaš pohvale, kritike, pitanja...",
+            "p2": "pošalji e-mail",
+            "p3": "ili",
+            "p4": "Ispuni obrazac",
+            "label_name": "Ime i Prezime",
+            "label_email": "E-mail",
+            "label_msg": "Tvoja Poruka!",
+            "send_btn": "Pošalji"
+        }
+    },
+    "contactme": {
+        "en": {
+            "h2": "Contact me now;",
+            "p1": "My LinkedIn Profile"
+        },
+        "hr": {
+            "h2": "Kontaktiraj me...",
+            "p1": "Moj LinkedIn profil"
+        }
+    },
+    "copyright": {
+        "en": {
+            "terms": "Terms and Conditions",
+            "privacy": "Privacy Policy"
+        },
+        "hr": {
+            "terms": "Uvjeti Korištenja ",
+            "privacy": "Politika Privatnosti"
+        }
+    },
+    "sharewebapp": {
+        "en": {
+            "h2": "Share web app on",
+            "email-subject": "Check out this awesome web app",
+            "email-body": "Click the link and visit Crypto Text"
+        },
+        "hr": {
+            "h2": "Podijeli na druge platforme",
+            "email-subject": "Pogledajte ovu sjajnu web aplikaciju",
+            "email-body": "Klikni na link i posjeti Crypto Text"
+        }
+    },
+    "usetechnology": {
+        "en": {
+            "h2": "Technologies Used in the Project"
+        },
+        "hr": {
+            "h2": "Korištene tehologije u projektu"
+        }
+    },
+    "popup": {
+        "en": {
+            "popup-p1": "This website uses cookies to provide the best possible experience. If you continue to use this site, we assume that you consent to the use of cookies.",
+            "popup-p2": "For more information, click 'Learn more'",
+            "learnmore-btn": "Learn more",
+            "accept-btn": "I agree"
+        },
+        "hr": {
+            "popup-p1": "Ova stranica koristi kolačiće kako bi pružila najbolje moguće iskustvo. Ako nastavite koristiti ovu stranicu, smatramo da ste suglasni s upotrebom kolačića." ,
+            "popup-p2": "Za više informacija pritisni 'Saznaj više'",
+            "learnmore-btn": "Saznaj više",
+            "accept-btn": "Slažem se"
+        }
+    },
+    "DecryptoHistorySaveCryptoText": {
+        "en": {
+            "h3": "History of Decrypted Texts",
+            "option1": "Newest to Oldest",
+            "option2": "Oldest to Newest",
+            "delete-btn": "Delete All",
+            "error-msg": "No saved items."
 
+        },
+        "hr": {
+            "h3": "Povijest dešifriranih tekstova",
+            "option1": "Najnovije do najstarijeg",
+            "option2": "Najstarije do najnovijeg",
+            "delete-btn": "Izbriši sve",
+            "error-msg": "Nema spremljenih stavki."
 
+        }
+    },
+    "HistorySaveCryptoText": {
+        "en": {
+            "h3":  "History of Encrypted Texts",
+            "option1": "Newest to Oldest",
+            "option2": "Oldest to Newest",
+            "delete-btn": "Delete All",
+            "error-msg": "No saved items."
+
+        },
+        "hr": {
+            "h3": "Povijest šifriranih tekstova",
+            "option1": "Najnovije do najstarijeg",
+            "option2": "Najstarije do najnovijeg",
+            "delete-btn": "Izbriši sve",
+            "error-msg": "Nema spremljenih stavki."
+
+        }
+    },
+    "InputCryptoTextComponent": {
+        "en": {
+            "seterror-msg":"* Enter encrypted text *",
+            "h3":  "Decrypt text...",
+            "placeholder": "Enter encrypted text here...",
+            "decrypt-btn": "Decrypt"
+        },
+        "hr": {
+            "seterror-msg":"* Unesite šifrirani text *",
+            "h3": "Dešifriraj text...",
+            "placeholder": "Unesite šifrirani tekst ovdje...",
+            "decrypt-btn": "Dešifriraj"
+        }
+    },
+    "InputTextComponent" : {
+        "en": {
+            "seterror-msg":"* Enter text *",
+            "h3":  "Encrypt text...",
+            "placeholder": "Enter  text here...",
+            "encrypt-btn": "Encrypt"
+        },
+        "hr": {
+            "seterror-msg":"* Unesite text *",
+            "h3": "Šifriraj text...",
+            "placeholder": "Unesite  tekst ovdje...",
+            "encrypt-btn": "Šifriraj"
+        }
+    },
+    "modal": {
+        "en": {
+            "h2": "Details of Encrypted Text",
+            "time": "Time:",
+            "input": "Input text:",
+            "output": "Output text:"
+        },
+        "hr": {
+            "h2": "Detalji šifriranog teksta",
+            "time": "Vrijeme:",
+            "input": "Ulazni text:",
+            "output": "Izlazni text:"
+        }
+    },
+    "ModalDecrypto": {
+        "en": {
+            "h2": "Details of Decrypted Text",
+            "time": "Time:",
+            "input": "Input text:",
+            "output": "Output text:"
+        },
+        "hr": {
+            "h2": "Detalji šifriranog teksta",
+            "time": "Vrijeme:",
+            "input": "Ulazni text:",
+            "output": "Izlazni text:"
+        }
+    },
+    "ShareCryptedText": {
+        "en": {
+            "title": "Encrypted text",
+            "showNotification": "Text has been successfully copied!"
+        },
+        "hr": {
+            "title": "Šifrirani tekst",
+            "showNotification": "Tekst je uspješno kopiran!"
+        }
+    },
+    "pageAbout": {
+        "en": {
+            "": "",
+            "": "",
+            "": "",
+            "": ""
+        },
+        "hr": {
+            "": "",
+            "": "",
+            "": "",
+            "": ""
+        }
+    },
+    "": {
+        "en": {
+            "": "",
+            "": "",
+            "": "",
+            "": ""
+        },
+        "hr": {
+            "": "",
+            "": "",
+            "": "",
+            "": ""
+        }
     }
 }

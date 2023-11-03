@@ -2,6 +2,7 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import "../style/DecryptoHistorySaveTextItemStyle.css";
 
+
 const DecryptoHistorySaveTextItem = ({ data, onDelete, onOpenDecrypto }) => {
   const handleDelete = () => {
     onDelete(data.id);

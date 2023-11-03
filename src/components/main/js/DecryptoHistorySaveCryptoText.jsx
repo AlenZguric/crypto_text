@@ -3,6 +3,7 @@ import DecryptoHistorySaveTextItem from "./DecryptoHistorySaveTextItem";
 import ModalDecrypto from "./ModalDecrypto";
 import moment from "moment";
 import "../style/DecryptoHistorySaveCryptoTextStyle.css";
+import { translate } from "../../../translation/Translate";
 
 const DecryptoHistorySaveCryptoText = ({ handleDelete: parentHandleDelete, decryptedText }) => {
   const [cryptoData, setCryptoData] = useState([]);
@@ -53,7 +54,7 @@ const DecryptoHistorySaveCryptoText = ({ handleDelete: parentHandleDelete, decry
   return (
     <div className="DHistorySaveCryptoText">
       <div className="Dtitle-item">
-        <h3>Povijest dešifriranih tekstova</h3>
+        <h3>{translate("DecryptoHistorySaveCryptoText", "h3")}</h3>
       </div>
       <div className="Dsort-delete">
         <div className="Dsort">
@@ -61,17 +62,17 @@ const DecryptoHistorySaveCryptoText = ({ handleDelete: parentHandleDelete, decry
             onChange={(e) => setSortOrder(e.target.value)}
             value={sortOrder}
           >
-            <option value="newestToOldest">Najnovije do najstarijeg</option>
-            <option value="oldestToNewest">Najstarije do najnovijeg</option>
+            <option value="newestToOldest">{translate("DecryptoHistorySaveCryptoText", "option1")}</option>
+            <option value="oldestToNewest">{translate("DecryptoHistorySaveCryptoText", "option2")}</option>
           </select>
         </div>
         <div className="Ddelete">
-          <button onClick={handleDeleteAll}>Izbriši sve</button>
+          <button onClick={handleDeleteAll}>{translate("DecryptoHistorySaveCryptoText", "delete-btn")}</button>
         </div>
       </div>
 
       {cryptoData.length === 0 ? (
-        <p className="Derror-msg">Nema spremljenih stavki.</p>
+        <p className="Derror-msg">{translate("DecryptoHistorySaveCryptoText", "error-msg")}</p>
       ) : (
         <ul>
           {cryptoData.map((data) => (

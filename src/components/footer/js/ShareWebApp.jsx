@@ -12,6 +12,7 @@ import {
   WhatsappIcon,
   EmailIcon,
 } from "react-share";
+import { translate } from "../../../translation/Translate";
 
 const ShareWebApp = () => {
    const [currentUrl, setCurrentUrl] = useState(""); // State za pohranu trenutnog URL-a
@@ -27,7 +28,7 @@ const ShareWebApp = () => {
   return (
     <div className="shareWebApp">
       <div className="title">
-        <h2 >Podijeli na druge platforme</h2>
+        <h2 >{translate("sharewebapp", "h2")}</h2>
       </div>
       <div className="shareWebButtons">
       <LinkedinShareButton url={currentUrl}>
@@ -43,8 +44,8 @@ const ShareWebApp = () => {
         <WhatsappIcon size={30} round />
       </WhatsappShareButton>
         <EmailShareButton
-          subject="Pogledajte ovu sjajnu web aplikaciju"
-          body={`Web app možeš skinuti na:\n\n${currentUrl}`} >
+          subject={translate("sharewebapp","email-subject")}
+          body={`${translate("sharewebapp","email-body")} ${currentUrl}`}>
           <EmailIcon size={30} round />
         </EmailShareButton>
       </div>

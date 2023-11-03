@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import LanguageSelector from "../js/LanguageSelector";
 import { Link } from "react-router-dom";
 import "../css/PopUpStyle.css";
+import { translate } from "../../../translation/Translate";
+
 
 const PopUp = () => {
   const [isCookieAccepted, setIsCookieAccepted] = useState(false);
@@ -53,20 +55,18 @@ const PopUp = () => {
         </h3>
         <div className="text">
           <p>
-            Ova stranica koristi kolačiće kako bi pružila najbolje moguće
-            iskustvo. Ako nastavite koristiti ovu stranicu, smatramo da ste
-            suglasni s upotrebom kolačića.
+           {translate("popup", "popup-p1")}
           </p>
           <br />
           <br />
-          <p>Za više informacija pritisni "Saznaj više"</p>
+          <p>{translate("popup", "popup-p2")}</p>
         </div>
       </div>
       <div className="cookie-btn">
         <button>
-          <Link to="/cookie">Saznaj više</Link>
+          <Link to="/privacy">{translate("popup", "learnmore-btn")}</Link>
         </button>
-        <button onClick={acceptCookies}>Slažem se</button>
+        <button onClick={acceptCookies}>{translate("popup", "accept-btn")}</button>
       </div>
     </div>
   );
