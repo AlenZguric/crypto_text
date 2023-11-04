@@ -3,12 +3,14 @@ import HistorySaveCryptoText from "../components/main/js/HistorySaveCryptoText";
 import "../pages/css/HistoryPageStyle.css";
 import CopyRight from "../components/footer/js/CopyRight";
 import DecryptoHistorySaveCryptoText from "../components/main/js/DecryptoHistorySaveCryptoText";
+import { translate } from "../translation/Translate";
+
 export default function HistoryPage() {
   return (
     <div className="History-page">
       <div className="title">
-        <h2>Povijest</h2>
-        <p>Pronađi sve na jednom mjestu...</p>
+        <h2>{translate("pageHistory", "h2")}</h2>
+        <p>{translate("pageHistory", "p")}</p>
       </div>
       <main>
         <section>

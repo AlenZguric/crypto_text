@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import AboutUsPage from "./pages/AboutUsPage";
-import CryptoPage from "./pages/CryproPage";
+import CryptoPage from "./pages/CryptoPage";
 import HistoryPage from "./pages/HistoryPage";
 import PrivacyAndTerm from "./pages/PrivacyAndTerm";
 

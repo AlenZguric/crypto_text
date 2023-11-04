@@ -244,18 +244,96 @@
            
         }
     },
-    "": {
+    "pageCrypto": {
         "en": {
-            "": "",
-            "": "",
-            "": "",
-            "": ""
+            "title-h2": "Safe and Free",
+            "title-p1": "Encrypt your text and stay safe from prying eyes",
+            "title-p2":  "With our app",
+            "toggle-span1":  "Encrypt",
+            "toggle-span2": "Decrypt",
+            "history-btn": "History..."
         },
         "hr": {
-            "": "",
-            "": "",
-            "": "",
-            "": ""
+            "title-h2": "Sigurno i Besplatno",
+            "title-p1": "Kriptiraj svoj text i budi siguran od znateželjnih očiju",
+            "title-p2": "Uz našu aplikaciju",
+            "toggle-span1": "Šifriraj",
+            "toggle-span2": "Dešifriraj",
+            "history-btn": "Povijest..."
+        }
+    },
+    "pageHistory": {
+        "en": {
+            "h2": "History",
+            "p": "Find everything in one place..."
+          
+        },
+        "hr": {
+            "h2": "",
+            "p": "Pronađi sve na jednom mjestu..."
+           
+        }
+    },
+    "pageHome": {
+        "en": {
+            "title-h1": "Welcome,",
+            "title-h2": "Free Web Application for Text Encryption...",
+            "ul-li1": "Security first",
+            "ul-li2": "Available on all devices",
+            "ul-li3":  "Simple and Fast",
+            "ul-li4": "Share with confidence",
+            "ul-li5": "Free and accessible to all",
+            "home-btn1": "Encrypt",
+            "home-btn2": "About"
+        },
+        "hr": {
+            "title-h1": "Dobrodošli,",
+            "title-h2": "Besplatna Web Aplikacija za šifriranje texta...",
+            "ul-li1": "Sigurnost na prvom mjestu",
+            "ul-li2": "Dostupno na svim uređajima",
+            "ul-li3": "Jednostavno i brzo",
+            "ul-li4": "Podijelite sa sigurnošću",
+            "ul-li5": "Besplatno i dostupno svima",
+            "home-btn1": "Šifriraj",
+            "home-btn2": "O Cryptu"
+        }
+    },
+    "pagePrivacy": {
+        "en": {
+            "title-p":"Welcome to the Crypto Text app! By using this app, you agree to the terms of use described below. If you do not agree with these terms, do not use the app.",
+            "title-h2": "Terms of Use",
+            "ol-p1": "General Terms",
+            "ol-li1": "The app is free and open for everyone to use.",
+            "ol-li2": "The app's author disclaims all liability for any damage or loss of data that may arise from using the application.",
+            "ol-p2": "Cookies",
+            "ul-li1": "The app uses cookies to enhance the user experience.",
+            "ul-li2": "Cookies are used to store the selected language (Croatian or English) in local storage for language customization to the user.",
+            "article-h2": "Privacy Policy",
+            "article-h4-1": "Your privacy is important to us, and we are committed to safeguarding and protecting your personal information.",
+            "article-h4-2": "Here are our privacy policies:",
+            "ol-li-p-li1": "Data Collection",
+            "ol-li-p-li2": "The application does not collect personal user data, except for the language selected in the application (Croatian or English), which is stored in local storage.",
+            "ol-li-p-li3": "Data Storage and Security",
+            "ol-li-p-li4": "The data you enter in the text encryption and decryption component is stored in the browser's local storage.",
+            "ol-li-p-li5": "Data is not shared with third parties and is protected from unauthorized access."
+        },
+        "hr": {
+            "title-p": " Dobrodošli u Crypto Text aplikaciju! Korištenjem ove aplikacije, slažete se s uvjetima korištenja opisanim u nastavku. Ako se ne slažete s ovim uvjetima, nemojte koristiti aplikaciju.",
+            "title-h2": "Uvjeti korištenja",
+            "ol-p1": "Opći uvjeti",
+            "ol-li1": "Aplikacija je besplatna i otvorena za korištenje svima.",
+            "ol-li2": " Autor aplikacije se odriče svih odgovornosti za bilo kakvu štetu ili gubitak podataka koji mogu nastati korištenjem aplikacije.",
+            "ol-p2": "Kolačići",
+            "ul-li1": " Aplikacija koristi kolačiće (cookies) kako bi poboljšala iskustvo korisnika.",
+            "ul-li2": " Kolačići se koriste za spremanje odabranog jezika (hrvatski ili engleski) u local storage radi prilagodbe  jezika korisniku.",
+            "article-h2": "Pravila privatnosti",
+            "article-h4-1": "Vaša privatnost nam je važna, stoga se obvezujemo čuvati i štititi vaše osobne podatke.",
+            "article-h4-2": "Ovdje su naša pravila privatnosti:",
+            "ol-li-p-li1": "Prikupljanje podataka",
+            "ol-li-p-li2": "Aplikacija ne prikuplja osobne podatke korisnika osim jezika odabranog u aplikaciji (hrvatski ili engleski), koji se sprema u local storage.",
+            "ol-li-p-li3": "Pohrana i sigurnost podataka",
+            "ol-li-p-li4": "Podaci koje unesete u komponentu za šifriranje i dešifriranje teksta pohranjuju se u local storage preglednika.",
+            "ol-li-p-li5": " Podaci se ne dijele s trećim stranama i štite se od neovlaštenog pristupa."
         }
     }
 }

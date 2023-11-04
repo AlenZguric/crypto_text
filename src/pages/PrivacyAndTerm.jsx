@@ -1,6 +1,7 @@
 import React from "react";
 import CopyRight from "../components/footer/js/CopyRight";
 import "../pages/css/PrivacyAndTermPageStyle.css";
+import { translate } from "../translation/Translate";
 
 const PrivacyAndTerm = () => {
   return (
@@ -9,9 +10,7 @@ const PrivacyAndTerm = () => {
         <div className="title">
           <header>
             <p>
-              Dobrodošli u Crypto Text aplikaciju! Korištenjem ove aplikacije,
-              slažete se s uvjetima korištenja opisanim u nastavku. Ako se ne
-              slažete s ovim uvjetima, nemojte koristiti aplikaciju.
+          {translate("pagePrivacy", "title-p")}
             </p>
             <hr />
           </header>
@@ -20,70 +19,59 @@ const PrivacyAndTerm = () => {
         <main>
           <section>
             <article>
-              <h2 className="section-title">Uvjeti korištenja</h2>
+              <h2 className="section-title">{translate("pagePrivacy", "title-h2")}</h2>
 
               <ol>
                 <li className="sub-section">
                   <p>
-                    <strong>Opći uvjeti</strong>
+                    <strong>{translate("pagePrivacy", "ol-p1")}</strong>
                   </p>
                   <ul>
                     <li>
-                      Aplikacija je besplatna i otvorena za korištenje svima.
+                    {translate("pagePrivacy", "ol-li1")}
                     </li>
                     <li>
-                      Autor aplikacije se odriče svih odgovornosti za bilo kakvu
-                      štetu ili gubitak podataka koji mogu nastati korištenjem
-                      aplikacije.
+                    {translate("pagePrivacy", "ol-li2")}
                     </li>
                   </ul>
                 </li>
                 <li className="sub-section">
                   <p>
-                    <strong>Kolačići</strong>
+                    <strong>{translate("pagePrivacy", "ol-p2")}</strong>
                   </p>
                   <ul>
                     <li>
-                      Aplikacija koristi kolačiće (cookies) kako bi poboljšala
-                      iskustvo korisnika.
+                    {translate("pagePrivacy", "ul-li1")}
                     </li>
                     <li>
-                      Kolačići se koriste za spremanje odabranog jezika
-                      (hrvatski ili engleski) u local storage radi prilagodbe
-                      jezika korisniku.
+                    {translate("pagePrivacy", "ul-li2")}
                     </li>
                   </ul>
                 </li>
               </ol>
             </article>
             <article>
-              <h2 className="section-title">Pravila privatnosti</h2>
+              <h2 className="section-title">{translate("pagePrivacy", "article-h2")}</h2>
               <h4>
-                Vaša privatnost nam je važna, stoga se obvezujemo čuvati i
-                štititi vaše osobne podatke. <br /><br /> Ovdje su naša pravila privatnosti:
+              {translate("pagePrivacy", "article-h4-1")} <br /><br /> {translate("pagePrivacy", "article-h4-2")}
               </h4>
               <ol>
                 <li className="sub-section">
-                  <p><strong>Prikupljanje podataka</strong></p>
+                  <p><strong>{translate("pagePrivacy", "ol-li-p-li1")}</strong></p>
                   <ul>
                     <li>
-                      Aplikacija ne prikuplja osobne podatke korisnika osim
-                      jezika odabranog u aplikaciji (hrvatski ili engleski),
-                      koji se sprema u local storage.
+                    {translate("pagePrivacy", "ol-li-p-li2")}
                     </li>
                   </ul>
                 </li>
                 <li className="sub-section">
-                  <p><strong>Pohrana i sigurnost podataka</strong></p>
+                  <p><strong>{translate("pagePrivacy", "ol-li-p-li3")}</strong></p>
                   <ul>
                     <li>
-                      Podaci koje unesete u komponentu za šifriranje i
-                      dešifriranje teksta pohranjuju se u local storage
-                      preglednika.
+                    {translate("pagePrivacy", "ol-li-p-li4")}
                     </li>
                     <li>
-                      Podaci se ne dijele s trećim stranama i štite se od
-                      neovlaštenog pristupa.
+                    {translate("pagePrivacy", "ol-li-p-li5")}
                     </li>
                   </ul>
                 </li>

@@ -8,6 +8,7 @@ import "../components/footer/css/ShareWebAppStyle.css";
 import UseTechnology from '../components/footer/js/UseTechnology';
 import ContactMe from '../components/footer/js/ContactMe';
 import PopUp from '../components/header/js/PopUp';
+import { translate } from "../translation/Translate";
 
 
 const HomePage = () => {
@@ -21,22 +22,22 @@ const HomePage = () => {
         <PopUp/>
             <div className="title">
                 <main>
-                    <h1>Dobrodošli,  <br /><span>CryptoText</span></h1>
+                    <h1>{translate("pageHome", "title-h1")}  <br /><span>CryptoText</span></h1>
                     <section>
-                    <h2>Besplatna Web Aplikacija za šifriranje texta...</h2>
+                    <h2>{translate("pageHome", "title-h2")}</h2>
                     <ul>
-                        <li>Sigurnost na prvom mjestu</li>
-                        <li>Dostupno na svim uređajima</li>
-                        <li>Jednostavno i brzo</li>
-                        <li> Podijelite sa sigurnošću</li>
-                        <li>Besplatno i dostupno svim</li>
+                        <li>{translate("pageHome", "ul-li1")}</li>
+                        <li>{translate("pageHome", "ul-li2")}</li>
+                        <li>{translate("pageHome", "ul-li3")}</li>
+                        <li>{translate("pageHome", "ul-li4")}</li>
+                        <li>{translate("pageHome", "ul-li5")}</li>
                     </ul>
                     <div className="home-buttons">
                         <button className='crypto_btn'>
-                            <Link to="/crypto">Šifriraj</Link>
+                            <Link to="/crypto">{translate("pageHome", "home-btn1")}</Link>
                         </button>
                         <button className="about_btn">
-                            <Link to="/about">O Cryptu</Link>
+                            <Link to="/about">{translate("pageHome", "home-btn2")}</Link>
                         </button>
                     </div>
                     </section>                    

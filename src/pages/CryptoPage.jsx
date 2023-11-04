@@ -7,6 +7,8 @@ import "../pages/css/CryptoPageStyle.css";
 import "../components/main/style/InputCryptoTextComponentStyle.css";
 import "../components/main/style/InputTextComponent.css";
 import { Link } from "react-router-dom";
+import { translate } from "../translation/Translate";
+
 
 export default function CryproPage() {
   const [showInputText, setShowInputText] = useState(true);
@@ -19,15 +21,15 @@ export default function CryproPage() {
     <div className="crypto-page">
       <PopUp />
       <div className="crypto-title">
-        <h2>Sigurno i Besplatno</h2>
-        <p>Kriptiraj svoj text i budi siguran od znateželjnih očiju </p>
-        <p>Uz našu aplikaciju</p>
+        <h2>{translate("pageCrypto","title-h2")}</h2>
+        <p>{translate("pageCrypto","title-p1")}</p>
+        <p>{translate("pageCrypto","title-p2")}</p>
       </div>
       <div className="hr-class">
       <hr />
       </div>
       <div className="toggle">
-        <span>Šifriraj</span>
+        <span>{translate("pageCrypto","toggle-span1")}</span>
         <label className="iphone-toggle-switch">
           <input
             type="checkbox"
@@ -37,11 +39,11 @@ export default function CryproPage() {
 
           <div className="slider"></div>
         </label>
-        <span>Dešifriraj</span>
+        <span>{translate("pageCrypto","toggle-span2")}</span>
       </div>
 
       <div className="crypto-history">
-        <Link to="/history">Povijest...</Link>
+        <Link to="/history">{translate("pageCrypto","history-btn")}</Link>
       </div>
       <main>
         <section>
