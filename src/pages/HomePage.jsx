@@ -9,6 +9,8 @@ import UseTechnology from '../components/footer/js/UseTechnology';
 import ContactMe from '../components/footer/js/ContactMe';
 import PopUp from '../components/header/js/PopUp';
 import { translate } from "../translation/Translate";
+import PageTitle from "../components/header/js/PageTitle"
+
 
 
 const HomePage = () => {
@@ -19,6 +21,7 @@ const HomePage = () => {
 
     return (
        <div className='home-page'>
+        <PageTitle title={"Home"}/>
         <PopUp/>
             <div className="title">
                 <main>

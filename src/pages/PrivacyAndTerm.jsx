@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import CopyRight from "../components/footer/js/CopyRight";
 import "../pages/css/PrivacyAndTermPageStyle.css";
 import { translate } from "../translation/Translate";
+import PageTitle from "../components/header/js/PageTitle"
+
 
 const PrivacyAndTerm = () => {
   useEffect(() => {
@@ -9,6 +11,7 @@ const PrivacyAndTerm = () => {
   }, []);
   return (
     <div className="privacy-page">
+      <PageTitle title={"Privacy And terms"}/>
       <div className="privacy-and-terms">
         <div className="title">
           <header>

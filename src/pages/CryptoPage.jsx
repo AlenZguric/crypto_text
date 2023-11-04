@@ -8,6 +8,8 @@ import "../components/main/style/InputCryptoTextComponentStyle.css";
 import "../components/main/style/InputTextComponent.css";
 import { Link } from "react-router-dom";
 import { translate } from "../translation/Translate";
+import PageTitle from "../components/header/js/PageTitle"
+
 
 
 export default function CryproPage() {
@@ -19,6 +21,7 @@ export default function CryproPage() {
 
   return (
     <div className="crypto-page">
+      <PageTitle title={"Encrypt"}/>
       <PopUp />
       <div className="crypto-title">
         <h2>{translate("pageCrypto","title-h2")}</h2>

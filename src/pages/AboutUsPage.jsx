@@ -5,6 +5,7 @@ import "../pages/css/AboutPageStyle.css";
 import TypeText from "../components/main/js/TypeText";
 import { Link } from "react-router-dom";
 import { translate } from "../translation/Translate";
+import PageTitle from "../components/header/js/PageTitle"
 
 const AboutUsPage = () => {
 
@@ -28,6 +29,7 @@ const AboutUsPage = () => {
   }, []);
   return (
     <div className="About-page">
+      <PageTitle title={"About"}/>
       <PopUp />
       <div className="about-title">
         <h3>
