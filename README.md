@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Crypto Text
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Text Encryption and Decryption Application
 
-In the project directory, you can run:
 
-### `npm start`
+You can use the application at   [Crypto Text](https://crypto-text-30a48.web.app).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `About Crypto`
 
-### `npm test`
+ [Crypto Text](https://crypto-text-30a48.web.app) is a React application for encrypting and decrypting text.
+It uses a special library of symbols and characters to encrypt text in  English and Croatian languages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### DEMO
 
-### `npm run build`
+To see the capabilities of the application and how to use it, watch the \
+[Video ](https://crypto-text-30a48.web.app/about#video-section)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Key Features`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Fast and easy to use
+* Security
+* Open Source 
+* Accessible to all users without registration
+* User interface available in multiple languages
+* Mobile and desktop-friendly design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Goal  `
 
-### `npm run eject`
+The application is designed for users who want to protect their data from unauthorized access.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `How to Use Crypto and Its Features`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+By clicking the [Encrypt](https://crypto-text-30a48.web.app/crypto)  button, you will have access to several features. The default logic will convert the text you enter in English and Croatian languages into an unreadable combination of characters and symbols.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You can also decrypt the same text if you switch the toggle above the text input field to  **Decrypt**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you need a text that you have encrypted, visit [History](https://crypto-text-30a48.web.app/history). By clicking on the entry you need, you can view it in full screen.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The text you encrypt can be shared directly on social media, Viber, and WhatsApp, or sent directly in a new email and other sharing options.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you like the application, you can quickly share it in multiple places as well.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For compliments, critiques, or comments, you can contact me directly via  [Email](mailto:zguric.alen@hotmail.com) or fill out the   [Form](https://crypto-text-30a48.web.app/contact).
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
