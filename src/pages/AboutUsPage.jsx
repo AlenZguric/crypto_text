@@ -4,8 +4,7 @@ import CopyRight from "../components/footer/js/CopyRight";
 import "../pages/css/AboutPageStyle.css";
 import TypeText from "../components/main/js/TypeText";
 import { Link } from "react-router-dom";
-import { translate } from "../../../translation/Translate";
-
+import { translate } from "../translation/Translate";
 
 const AboutUsPage = () => {
   const HowToUse = () => {
@@ -31,13 +30,12 @@ const AboutUsPage = () => {
       <PopUp />
       <div className="about-title">
         <h3>
-          O Crypt<span>O</span>
+          {translate("pageAbout", "title-h3")}
+          <span>O</span>
         </h3>
 
         <TypeText
-          text="Dobrodošli u aplikaciju za šifriranje
-             i dešifriranje poruka! Sigurnost i
-              privatnost vaše komunikacije su nam na prvom mjestu"
+          text={translate("pageAbout", "typeText")}
           delay={30}
           initialDelay={1500}
           element="p"
@@ -47,62 +45,44 @@ const AboutUsPage = () => {
         <main>
           <section className="about-section">
             <article>
-              <h4>Ključne značajke</h4>
+              <h4>{translate("pageAbout", "about-h4")}</h4>
               <ul>
                 <li>
-                  <p>Jednostavno korištenje</p>
-                  <p>
-                    Ne trebate biti stručnjak za kriptografiju da biste
-                    koristili našu aplikaciju. Jednostavno i intuitivno sučelje
-                    čini šifriranje i dešifriranje brzim i jednostavnim.
-                  </p>
+                  <p>{translate("pageAbout", "li-p1")}</p>
+                  <p>{translate("pageAbout", "li-p2")}</p>
                 </li>
                 <li>
-                  <p>Sigurnost</p>
-                  <p>
-                    Vaša sigurnost je naš prioritet. Koristimo najbolje prakse u
-                    kriptografiji kako bismo osigurali da vaše poruke ostanu
-                    privatne i sigurne.
-                  </p>
+                  <p>{translate("pageAbout", "li-p3")}</p>
+                  <p>{translate("pageAbout", "li-p4")}</p>
                 </li>
                 <li>
-                  <p>Brza i pouzdana komunikacija</p>
+                  <p>{translate("pageAbout", "li-p5")}</p>
                   <p>
-                    Naša aplikacija vam omogućava brzo šifriranje i dešifriranje
-                    poruka kako biste mogli komunicirati bez problema
-                    <a
-                      href="#video-section"
-                      style={{ textDecoration: "none"}}
-                    >
+                    {translate("pageAbout", "li-p6")}
+                    <a href="#video-section" style={{ textDecoration: "none" }}>
                       {" "}
-                      (Za upute pogledaj video)
+                      {translate("pageAbout", "li-p7")}
                     </a>
                   </p>
                 </li>
                 <li>
-                  <p>Dijeljenje sigurnih poruka</p>
-                  <p>
-                    Možete dijeliti šifrirane poruke s povjerenjem, znajući da
-                    su vaše poruke sigurne i nečitljive za neovlaštene osobe
-                  </p>
+                  <p> {translate("pageAbout", "li-p8")}</p>
+                  <p>{translate("pageAbout", "li-p9")}</p>
                 </li>
                 <li>
-                  <p>Potpuno Besplatno</p>
-                  <p>
-                    Ponosno nudimo našu aplikaciju besplatno svim korisnicima.
-                    Sigurnost bi trebala biti dostupna svima.
-                  </p>
+                  <p> {translate("pageAbout", "li-p10")}</p>
+                  <p>{translate("pageAbout", "li-p11")}</p>
                 </li>
                 <li>
-                  <p>Responzivan dizajn</p>
-                  <p>Aplikacija je dostupna za mobilne uređaje i desktope.</p>
+                  <p>{translate("pageAbout", "li-p12")}</p>
+                  <p>{translate("pageAbout", "li-p13")}</p>
                 </li>
               </ul>
             </article>
             <div className="video" id="video-section">
               <div className="title">
-                <h2>Video Uputstva</h2>
-                <p>kako koristi Crypto text web aplikaciju</p>
+                <h2>{translate("pageAbout", "video-h2")}</h2>
+                <p>{translate("pageAbout", "video-p")}</p>
               </div>
               <div className="youtube-video">
                 <HowToUse />
@@ -111,16 +91,16 @@ const AboutUsPage = () => {
           </section>
           <section className="policy">
             <hr />
-            <h4>Politika Privatnost i Uvjeti Korištenja</h4>
+            <h4>{translate("pageAbout", "section-h4")}</h4>
 
             <article>
-              <p>Posjeti linkove dolje za više informacija</p>
+              <p>{translate("pageAbout", "section-p")}</p>
               <ul>
                 <li>
-                  <Link to="/privacy">Politika Privatnosti</Link>
+                  <Link to="/privacy">{translate("pageAbout", "link-privacy")}</Link>
                 </li>
                 <li>
-                  <Link to="/privacy">Uvjeti Korištenja</Link>
+                  <Link to="/privacy">{translate("pageAbout", "link-terms")}</Link>
                 </li>
               </ul>
             </article>

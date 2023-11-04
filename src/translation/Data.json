@@ -89,7 +89,7 @@
             "accept-btn": "I agree"
         },
         "hr": {
-            "popup-p1": "Ova stranica koristi kolačiće kako bi pružila najbolje moguće iskustvo. Ako nastavite koristiti ovu stranicu, smatramo da ste suglasni s upotrebom kolačića." ,
+            "popup-p1": "Ova stranica koristi kolačiće kako bi pružila najbolje moguće iskustvo. Ako nastavite koristiti ovu stranicu, smatramo da ste suglasni s upotrebom kolačića.",
             "popup-p2": "Za više informacija pritisni 'Saznaj više'",
             "learnmore-btn": "Saznaj više",
             "accept-btn": "Slažem se"
@@ -102,7 +102,6 @@
             "option2": "Oldest to Newest",
             "delete-btn": "Delete All",
             "error-msg": "No saved items."
-
         },
         "hr": {
             "h3": "Povijest dešifriranih tekstova",
@@ -110,17 +109,15 @@
             "option2": "Najstarije do najnovijeg",
             "delete-btn": "Izbriši sve",
             "error-msg": "Nema spremljenih stavki."
-
         }
     },
     "HistorySaveCryptoText": {
         "en": {
-            "h3":  "History of Encrypted Texts",
+            "h3": "History of Encrypted Texts",
             "option1": "Newest to Oldest",
             "option2": "Oldest to Newest",
             "delete-btn": "Delete All",
             "error-msg": "No saved items."
-
         },
         "hr": {
             "h3": "Povijest šifriranih tekstova",
@@ -128,32 +125,31 @@
             "option2": "Najstarije do najnovijeg",
             "delete-btn": "Izbriši sve",
             "error-msg": "Nema spremljenih stavki."
-
         }
     },
     "InputCryptoTextComponent": {
         "en": {
-            "seterror-msg":"* Enter encrypted text *",
-            "h3":  "Decrypt text...",
+            "seterror-msg": "* Enter encrypted text *",
+            "h3": "Decrypt text...",
             "placeholder": "Enter encrypted text here...",
             "decrypt-btn": "Decrypt"
         },
         "hr": {
-            "seterror-msg":"* Unesite šifrirani text *",
+            "seterror-msg": "* Unesite šifrirani text *",
             "h3": "Dešifriraj text...",
             "placeholder": "Unesite šifrirani tekst ovdje...",
             "decrypt-btn": "Dešifriraj"
         }
     },
-    "InputTextComponent" : {
+    "InputTextComponent": {
         "en": {
-            "seterror-msg":"* Enter text *",
-            "h3":  "Encrypt text...",
+            "seterror-msg": "* Enter text *",
+            "h3": "Encrypt text...",
             "placeholder": "Enter  text here...",
             "encrypt-btn": "Encrypt"
         },
         "hr": {
-            "seterror-msg":"* Unesite text *",
+            "seterror-msg": "* Unesite text *",
             "h3": "Šifriraj text...",
             "placeholder": "Unesite  tekst ovdje...",
             "encrypt-btn": "Šifriraj"
@@ -199,16 +195,53 @@
     },
     "pageAbout": {
         "en": {
-            "": "",
-            "": "",
-            "": "",
-            "": ""
+            "title-h3": "About Crypt",
+            "typeText": "Welcome to the messaging encryption and decryption app! The security and privacy of your communication are our top priorities.",
+            "about-h4": "Key Features",
+            "li-p1": "Ease of Use",
+            "li-p2": "You don't need to be a cryptography expert to use our app. The simple and intuitive interface makes encryption and decryption quick and easy.",
+            "li-p3": "Security",
+            "li-p4": "Your security is our priority. We use best practices in cryptography to ensure that your messages remain private and secure.",
+            "li-p5": "Fast and Reliable Communication",
+            "li-p6": "Our app allows you to quickly encrypt and decrypt messages so you can communicate without any issues",
+            "li-p7": "(For instructions, watch the video)",
+            "li-p8": "Sharing Secure Messages",
+            "li-p9": "You can share encrypted messages with confidence, knowing that your messages are secure and unreadable to unauthorized individuals.",
+            "li-p10": "Completely Free",
+            "li-p11": "We proudly offer our app for free to all users. Security should be accessible to everyone.",
+            "li-p12": "Responsive Design",
+            "li-p13": "The app is available for mobile devices and desktops.",
+            "video-h2": "Video Tutorial",
+            "video-p": "how to Use the Crypto Text Web App",
+            "section-h4": "Privacy Policy and Terms of Use",
+            "section-p": "Visit the links below for more information",
+            "link-privacy": "Privacy Policy",
+            "link-terms": "Terms and Conditions"       
         },
         "hr": {
-            "": "",
-            "": "",
-            "": "",
-            "": ""
+            "title-h3": "O Crypt",
+            "typeText": "Dobrodošli u aplikaciju za šifriranje i dešifriranje poruka! Sigurnost i privatnost vaše komunikacije su nam na prvom mjestu",
+            "about-h4": "Ključne značajke",
+            "li-p1": "Jednostavno korištenje",
+            "li-p2": "Ne trebate biti stručnjak za kriptografiju da biste koristili našu aplikaciju. Jednostavno i intuitivno sučelje čini šifriranje i dešifriranje brzim i jednostavnim.",
+            "li-p3": "Sigurnost",
+            "li-p4": "Vaša sigurnost je naš prioritet. Koristimo najbolje prakse u kriptografiji kako bismo osigurali da vaše poruke ostanu privatne i sigurne.",
+            "li-p5": "Brza i pouzdana komunikacija",
+            "li-p6": "Naša aplikacija vam omogućava brzo šifriranje i dešifriranje poruka kako biste mogli komunicirati bez problema",
+            "li-p7": "(Za upute pogledaj video)",
+            "li-p8": "Dijeljenje sigurnih poruka",
+            "li-p9": "Možete dijeliti šifrirane poruke s povjerenjem, znajući da su vaše poruke sigurne i nečitljive za neovlaštene osobe",
+            "li-p10": "Potpuno Besplatno",
+            "li-p11": "Ponosno nudimo našu aplikaciju besplatno svim korisnicima. Sigurnost bi trebala biti dostupna svima.",
+            "li-p12": "Responzivan dizajn",
+            "li-p13": "Aplikacija je dostupna za mobilne uređaje i desktope.",
+            "video-h2": "Video Uputstvo",
+            "video-p": "kako koristi Crypto text web aplikaciju",
+            "section-h4": "Politika Privatnost i Uvjeti Korištenja",
+            "section-p": "Posjeti linkove dolje za više informacija",
+            "link-privacy": "Politika Privatnosti",
+            "link-terms": "Uvjeti Korištenja"
+           
         }
     },
     "": {
