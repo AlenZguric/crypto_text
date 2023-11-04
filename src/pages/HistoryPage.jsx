@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HistorySaveCryptoText from "../components/main/js/HistorySaveCryptoText";
 import "../pages/css/HistoryPageStyle.css";
 import CopyRight from "../components/footer/js/CopyRight";
@@ -6,6 +6,11 @@ import DecryptoHistorySaveCryptoText from "../components/main/js/DecryptoHistory
 import { translate } from "../translation/Translate";
 
 export default function HistoryPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="History-page">
       <div className="title">
@@ -18,13 +23,12 @@ export default function HistoryPage() {
             <HistorySaveCryptoText />
           </div>
           <div className="decrypto_items">
-          <DecryptoHistorySaveCryptoText />
-
+            <DecryptoHistorySaveCryptoText />
           </div>
         </section>
       </main>
       <footer>
-        <CopyRight/>
+        <CopyRight />
       </footer>
     </div>
   );

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { translate } from "../translation/Translate";
 
 const AboutUsPage = () => {
+
   const HowToUse = () => {
     return (
       <div className="howToUse">
