@@ -15,7 +15,7 @@ const AboutUsPage = () => {
         <iframe
           width="400"
           height="195"
-          src="https://www.youtube.com/embed/WY0HtLcQOxc"
+          src="https://www.youtube.com/embed/HnsxroI49x4"
           title="How To Use Crypto Text App"
           frameBorder="20"
           allowFullScreen
