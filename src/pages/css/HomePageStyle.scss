@@ -5,6 +5,8 @@
 .home-page {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+
 
   .title {
     display: flex;
@@ -198,6 +200,8 @@
 @media screen and (max-width: 768px) {
   .home-page {
     display: flex;
+    flex-direction: column;
+    height: 100%;
     .title {
       height: 100%;
       main {
