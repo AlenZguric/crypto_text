@@ -1,12 +1,18 @@
 {
     "short_name": "Crypto_text",
     "name": "Crypto_text",
-    "start_url": "./index.html",
+    "description": "CryptoText - Aplikacija za sigurno šifriranje tekstualnih poruka na hrvatskom i engleskom jeziku.",
+    "start_url": "./",
+    "scope": "/my-app/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "theme_color": "#87ff37",
     "icons": [
-      
+      {
+        "src": "../src/images/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/ico"
+      }
     ]
   }
   
