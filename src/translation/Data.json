@@ -247,7 +247,7 @@
     "pageCrypto": {
         "en": {
             "title-h2": "Safe and Free",
-            "title-p1": "Encrypt your text and stay safe from prying eyes",
+            "title-p1": "Encrypt your messages and ensure privacy",
             "title-p2":  "With our app",
             "toggle-span1":  "Encrypt",
             "toggle-span2": "Decrypt",
@@ -255,7 +255,7 @@
         },
         "hr": {
             "title-h2": "Sigurno i Besplatno",
-            "title-p1": "Kriptiraj svoj text i budi siguran od znateželjnih očiju",
+            "title-p1": "Šifrirajte svoje poruke i osigurajte privatnost",
             "title-p2": "Uz našu aplikaciju",
             "toggle-span1": "Šifriraj",
             "toggle-span2": "Dešifriraj",

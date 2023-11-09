@@ -15,11 +15,22 @@
     width: 100%;
   }
 }
-@media screen and (max-width:768px) {
- .contact-page{
-  height: 130vh;
-  align-items: flex-start;
-  justify-content: flex-start;
- }
-  
+@media screen and (max-width: 768px) {
+  .contact-page {
+    height: 130vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 2561px) {
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 999;
+  }
 }

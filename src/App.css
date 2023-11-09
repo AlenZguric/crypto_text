@@ -1,13 +1,14 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;}
-    .App {
-    background-image: url('./images/bacBinary.jpeg');
-    background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center; 
-     background-attachment: fixed; 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-   
+.App {
+  background-image: url("./images/bacBinary.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }

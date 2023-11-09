@@ -7,11 +7,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
   height: 500px;
+  width: 100%;
   position: absolute;
   border-radius: 25%;
   padding: 20px;
+
   .notificationForm {
     display: flex;
     flex-direction: column;
@@ -44,12 +45,14 @@
     padding: 20px;
     text-align: center;
     min-width: 40%;
+
     .contactTitle {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-right: 20px;
+
       h3 {
         font-size: 30px;
         letter-spacing: 4px;
@@ -57,6 +60,7 @@
         font-family: "roboto mono", sans-serif;
         text-transform: capitalize;
       }
+
       p {
         font-size: 16px;
         font-weight: 200;
@@ -64,6 +68,7 @@
         padding: 10px;
         text-transform: capitalize;
       }
+
       a {
         text-decoration: none;
         color: white;
@@ -73,6 +78,7 @@
         font-family: "roboto", sans-serif;
         padding: 20px;
         text-shadow: $color-secondary 1px 1px;
+
         &:hover {
           letter-spacing: normal;
           text-shadow: none;
@@ -82,10 +88,14 @@
   }
 
   .contactForm {
+    display: flex;
     padding: 20px;
-    min-width: 500px;
+    width: 100%;
 
     form {
+      width: 60%;
+      max-width: 600px;
+
       label {
         display: block;
         margin-bottom: 5px;
@@ -107,7 +117,6 @@
       input[type="submit"] {
         background-color: $color-green;
         color: black;
-        padding: 10px 20px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
@@ -120,6 +129,7 @@
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .contactMe {
     display: flex;
@@ -129,28 +139,36 @@
     left: 0;
     transform: none;
     position: relative;
+
     .contactLeft {
       padding: 10px;
       justify-content: flex-start;
       min-width: none;
+
       .contactTitle {
         justify-content: flex-start;
         margin-right: 0;
+
         h3 {
           font-size: 25px;
           padding-bottom: 3rem;
         }
       }
     }
+
     .contactForm {
-      min-width: 350px;
       width: 100%;
+      max-width: none;
+
       form {
+        width: 100%;
+
         label {
           font-size: 14px;
         }
       }
     }
+
     .notificationForm {
       display: flex;
       flex-direction: column;
@@ -176,5 +194,16 @@
         margin: 0;
       }
     }
+  }
+}
+
+@media (min-width: 2561px) {
+  .contactMe {
+    top: 0%;
+    left: 0%;
+    width: 80%;
+    transform: translate(0%, 0%);
+    position: relative;
+    align-items: center;
   }
 }

@@ -51,8 +51,7 @@
     justify-content: center;
     padding-top: 8px;
 
-
-    span{
+    span {
       color: white;
       padding: 4px 10px 8px 10px;
       font-family: "roboto mono", sans-serif;
@@ -69,7 +68,6 @@
       input {
         display: none; // Sakrij stvarni čekboks
       }
-      
 
       .slider {
         position: absolute;
@@ -113,7 +111,7 @@
     display: flex;
     width: 100%;
     height: 70vh;
-    section{
+    section {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -121,37 +119,46 @@
   }
 }
 
-@media screen and (max-width: 768px){
-  .crypto-page{
-    .crypto-title{
-      h2{
+@media screen and (max-width: 768px) {
+  .crypto-page {
+    .crypto-title {
+      h2 {
         margin-top: 10px;
         font-size: 1.7rem;
         text-transform: uppercase;
         justify-content: center;
         align-items: center;
       }
-      p{
+      p {
         line-height: normal;
         font-size: 16px;
         padding: 6px 0px 10px 6px;
-        font-family: 'Courier New', Courier, monospace;
-        &:nth-child(3){
+        font-family: "Courier New", Courier, monospace;
+        &:nth-child(3) {
           font-style: italic;
           padding-top: 10px;
         }
       }
     }
-   .crypto-history{
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    padding-right: 6px;
-    a{
-      font-size: 12px;
-      height: 25px;
-      width: 95px;
+    .crypto-history {
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+      padding-right: 6px;
+      a {
+        font-size: 12px;
+        height: 25px;
+        width: 95px;
+      }
     }
-   }
+  }
+}
+
+@media (min-width: 2561px) {
+}
+.crypto-page {
+  footer {
+    margin-top: auto;
+    width: 100%;
   }
 }
