@@ -3,36 +3,43 @@
   <url>
     <loc>https://crypto-text-30a48.web.app/</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/crypto</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/contact</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/about</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/cookie</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/history</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://crypto-text-30a48.web.app/privacy</loc>
     <lastmod>2023-11-04</lastmod>
+    <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
